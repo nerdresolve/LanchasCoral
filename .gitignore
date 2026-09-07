@@ -20,3 +20,6 @@ Thumbs.db
 
 # Cópias antigas de configuração: ficam na máquina, não no repositório.
 *.bak-*
+
+# Relatorio do Lighthouse: gerado a cada execucao, nao e fonte.
+apps/frontend/audit/_lh.json
