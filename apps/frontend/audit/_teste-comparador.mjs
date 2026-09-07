@@ -254,6 +254,84 @@ try {
     await c2.close()
   }
 
+  console.log('\n--- ALINHAMENTO NO CELULAR ---')
+  /*
+   * Nenhum caso pegava isto, e o desalinhamento chegou ao ar: os botões dos
+   * dois lados ficavam 39px desencontrados porque cada coluna empilhava por
+   * conta própria — uma descrição de três linhas contra uma de duas.
+   *
+   * O selo de diferença dava três defeitos conforme a largura: quebrava a
+   * linha (74px contra 57px das vizinhas), furava a coluna e encostava na
+   * borda da tela, ou truncava para "+100…" e perdia o dado. Foi para a
+   * coluna do meio, sob o rótulo, onde pertence à linha e não a um lado.
+   */
+  for (const largura of [390, 360, 320]) {
+    const ca = await navegador.newContext({
+      viewport: { width: largura, height: 800 },
+      isMobile: true,
+      hasTouch: true,
+    })
+    const pa = await ca.newPage()
+    await pa.goto(`${BASE}/comparar?a=coral-36-aberta&b=coral-36-cabinada`, {
+      waitUntil: 'networkidle',
+    })
+    await pa.waitForTimeout(1500)
+
+    /* Os botões dos dois lados na mesma altura. */
+    const botoes = await pa
+      .locator('button:has-text("SOLICITAR PROPOSTA"), a:has-text("VER FICHA")')
+      .evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().top)))
+    const desencontro =
+      botoes.length === 4 ? Math.abs(botoes[0] - botoes[2]) + Math.abs(botoes[1] - botoes[3]) : -1
+    conf(desencontro === 0, `${largura}px: os botões dos dois lados alinham`, `${desencontro}px`)
+
+    /* Nada pode encostar na borda da tela nem gerar rolagem lateral. */
+    const rolagem = await pa.evaluate(() => document.documentElement.scrollWidth > innerWidth)
+    conf(!rolagem, `${largura}px: sem rolagem horizontal`)
+
+    const naBorda = await pa.evaluate((vw) => {
+      const selos = [...document.querySelectorAll('dl > div span')].filter((s) =>
+        /^\+/.test(s.textContent.trim()),
+      )
+      return selos.filter((s) => s.getBoundingClientRect().right > vw - 4).length
+    }, largura)
+    conf(naBorda === 0, `${largura}px: nenhum selo encosta na borda`, `${naBorda} na borda`)
+
+    /* O selo mostra o dado inteiro: "+100…" perde o que a linha existe para
+       dizer. */
+    const truncados = await pa.evaluate(() =>
+      [...document.querySelectorAll('dl > div span')]
+        .filter((s) => /^\+/.test(s.textContent.trim()))
+        .filter((s) => s.scrollWidth > s.clientWidth + 1).length,
+    )
+    conf(truncados === 0, `${largura}px: nenhum selo cortado`, `${truncados} cortados`)
+
+    /* Os dois números de cada linha na mesma altura, e o número nunca parte
+       ao meio. */
+    const linhas = await pa.evaluate(() =>
+      [...document.querySelectorAll('dl > div')].map((e) => {
+        const dds = e.querySelectorAll('dd')
+        const a = dds[0]?.querySelector('span span')?.getBoundingClientRect()
+        const b = dds[1]?.querySelector('span span')?.getBoundingClientRect()
+        const alturas = [...e.querySelectorAll('dd span span')].map((v) =>
+          Math.round(v.getBoundingClientRect().height),
+        )
+        return {
+          desnivel: a && b ? Math.abs(Math.round(a.top - b.top)) : 0,
+          partido: alturas.some((h) => h > 26),
+        }
+      }),
+    )
+    const desnivelados = linhas.filter((l) => l.desnivel > 1).length
+    conf(desnivelados === 0, `${largura}px: os valores de cada linha alinham`, `${desnivelados}`)
+    conf(
+      linhas.filter((l) => l.partido).length === 0,
+      `${largura}px: nenhum número parte ao meio`,
+    )
+
+    await ca.close()
+  }
+
   console.log('\n--- MOSTRA SEMPRE TUDO ---')
   /*
    * Havia um filtro "só o que difere". Saiu: quem compara quer o quadro

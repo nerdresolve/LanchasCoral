@@ -55,25 +55,40 @@ export default function LinhasComparacao({
                    o contraste real do texto e reprova na acessibilidade. A
                    distinção é pelo fundo, que não mexe no contraste. */
                 data-iguais={linha.iguais || undefined}
-                className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 py-3 data-[iguais]:bg-[var(--surface-sunken)]/60 sm:gap-4"
+                className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 px-2 py-3 data-[iguais]:bg-[var(--surface-sunken)]/60 sm:gap-4 sm:px-0"
               >
                 <dd className="min-w-0">
                   <Valor
                     valor={linha.a}
-                    diferenca={linha.diferenca?.maior === 'a' ? linha.diferenca.texto : null}
                     proporcao={linha.proporcao?.a ?? null}
                     lado="esquerda"
                   />
                 </dd>
 
-                <dt className="px-1 text-center text-[11px] leading-tight text-[var(--color-text-body)] sm:px-3 sm:text-xs">
+                {/*
+                  O rótulo e, embaixo dele, a diferença.
+                  
+                  O selo morava ao lado do valor. Em três colunas de tela
+                  estreita não cabia: ora quebrava a linha (74px contra 57px
+                  das vizinhas), ora furava a coluna e encostava na borda, ora
+                  truncava para "+100…" e perdia o dado. No meio há espaço, e
+                  como pertence à linha e não a um lado, nada desnivela.
+                  
+                  O `max-w` evita que um rótulo longo como "Interior,
+                  pernoite" coma a largura das colunas e parta os números.
+                */}
+                <dt className="flex max-w-[96px] flex-col items-center gap-1 px-0.5 text-center text-[10px] leading-tight text-[var(--color-text-body)] sm:max-w-none sm:px-3 sm:text-xs">
                   {linha.rotulo}
+                  {linha.diferenca && (
+                    <span className="whitespace-nowrap rounded-[var(--radius-pill)] bg-ocean-700/10 px-1.5 py-0.5 font-mono text-[10px] font-medium text-ocean-700">
+                      {linha.diferenca.texto}
+                    </span>
+                  )}
                 </dt>
 
                 <dd className="min-w-0">
                   <Valor
                     valor={linha.b}
-                    diferenca={linha.diferenca?.maior === 'b' ? linha.diferenca.texto : null}
                     proporcao={linha.proporcao?.b ?? null}
                     lado="direita"
                   />
@@ -145,7 +160,7 @@ export default function LinhasComparacao({
 }
 
 /**
- * Um valor, o sinal de diferença e a barra proporcional.
+ * Um valor e a barra proporcional.
  *
  * A barra dá a leitura antes do número: "7,93" e "8,83" são parecidos como
  * texto, mas visivelmente diferentes como comprimento. Cresce do centro para
@@ -153,36 +168,27 @@ export default function LinhasComparacao({
  */
 function Valor({
   valor,
-  diferenca,
   proporcao,
   lado,
 }: {
   valor: string | null
-  diferenca: string | null
   /** 0 a 1, quanto este valor representa em relação ao maior dos dois. */
   proporcao: number | null
   lado: 'esquerda' | 'direita'
 }) {
   const direita = lado === 'direita'
 
-  const sinal = diferenca && (
-    <span className="whitespace-nowrap rounded-[var(--radius-pill)] bg-ocean-700/10 px-1.5 py-0.5 font-mono text-[10px] font-medium text-ocean-700 sm:text-[11px]">
-      {diferenca}
-    </span>
-  )
-
   return (
     <span className={`block ${direita ? 'text-left' : 'text-right'}`}>
-      <span className="inline-flex flex-wrap items-baseline gap-1.5">
-        {!direita && sinal}
-        <span
-          className={`font-mono text-[13px] tabular-nums sm:text-[15px] ${
-            valor === null ? 'text-[var(--text-muted)]' : 'font-medium text-[var(--text-strong)]'
-          }`}
-        >
-          {valor ?? '—'}
-        </span>
-        {direita && sinal}
+      {/* Só o número. O selo de diferença agora vive na coluna do meio, sob o
+          rótulo: pertence à linha, não a um dos lados, e lá tem espaço para
+          aparecer inteiro em qualquer largura de tela. */}
+      <span
+        className={`block whitespace-nowrap font-mono text-[13px] tabular-nums sm:text-[15px] ${
+          valor === null ? 'text-[var(--text-muted)]' : 'font-medium text-[var(--text-strong)]'
+        }`}
+      >
+        {valor ?? '—'}
       </span>
 
       {proporcao !== null && (

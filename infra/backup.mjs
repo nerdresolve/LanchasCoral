@@ -22,7 +22,7 @@ import { promisify } from 'node:util'
 import { mkdir, readdir, stat, unlink, readFile } from 'node:fs/promises'
 import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const execFileAsync = promisify(execFile)
 
@@ -242,8 +242,20 @@ async function mostrarLista() {
   }
 }
 
-const arg = process.argv[2]
-if (arg === '--listar') {
+/*
+ * Só executa quando chamado direto pela linha de comando.
+ *
+ * Sem esta guarda, importar o módulo — como faz `test/retencao.test.ts` para
+ * testar `decidirRetencao` — disparava o backup inteiro, e a suíte quebrava
+ * ao exigir POSTGRES_PASSWORD.
+ */
+const chamadoDireto =
+  process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href
+
+const arg = chamadoDireto ? process.argv[2] : null
+if (!chamadoDireto) {
+  // Importado por um teste ou outro script: nada a fazer.
+} else if (arg === '--listar') {
   await mostrarLista()
 } else if (arg === '--verificar') {
   await conferirConteiner()

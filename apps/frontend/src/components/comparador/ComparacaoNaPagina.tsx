@@ -54,7 +54,7 @@ export default function ComparacaoNaPagina({
 
   return (
     <div className="mx-auto w-full max-w-[var(--layout-narrow)]">
-      <div className="grid grid-cols-[1fr_auto_1fr] gap-2 sm:gap-4">
+      <div className="grid grid-cols-[1fr_auto_1fr] items-stretch gap-2 sm:gap-4">
         <CabecalhoLado
           {...a}
           outroSlug={b.slug}

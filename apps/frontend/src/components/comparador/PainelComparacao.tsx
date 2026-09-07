@@ -165,7 +165,7 @@ export default function PainelComparacao({
               carregandoPar === chave ? 'opacity-50' : 'opacity-100'
             }`}
           >
-            <div className="grid grid-cols-[1fr_auto_1fr] gap-2 sm:gap-4">
+            <div className="grid grid-cols-[1fr_auto_1fr] items-stretch gap-2 sm:gap-4">
               <CabecalhoLado
                 {...dados.a}
                 outroSlug={dados.b.slug}

@@ -49,7 +49,16 @@ export default function CabecalhoLado({
   const atual = fotos[foto] ?? fotos[0] ?? null
 
   return (
-    <div className="min-w-0">
+    /*
+     * Coluna de altura total com os botões na base.
+     *
+     * Sem isto, cada lado empilhava por conta própria: uma descrição de três
+     * linhas contra uma de duas jogava os botões da esquerda 39px abaixo dos
+     * da direita, e no celular o desencontro fica evidente. `h-full` recebe a
+     * altura da linha da grade (que é a do lado mais alto) e `mt-auto` no
+     * bloco de botões come a sobra, então os dois terminam juntos.
+     */
+    <div className="flex h-full min-w-0 flex-col">
       {/* 16:10 e não 4:3: no painel a foto divide espaço com a tabela, e o
           formato mais baixo deixa as primeiras linhas visíveis sem rolar. */}
       <div className="relative aspect-[16/10] overflow-hidden rounded-[var(--radius-md)] bg-navy-800">
@@ -102,7 +111,7 @@ export default function CabecalhoLado({
         </p>
       )}
 
-      <div className="mt-3 flex flex-wrap gap-2">
+      <div className="mt-auto flex flex-wrap gap-2 pt-3">
         <QuoteDialog locale={locale} boatSlug={slug} boatLabel={rotulo}>
           <button
             type="button"
