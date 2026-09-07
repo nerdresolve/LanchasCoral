@@ -1,0 +1,34 @@
+▲ Next.js 16.3.2 (Turbopack)
+- Local:         http://localhost:3147
+- Network:       http://192.168.0.5:3147
+- Environments: .env
+✓ Ready in 768ms
+✓ Running next.config.ts took 48ms
+
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). 
+[browser] Uncaught ReferenceError: HERO_HOME is not defined
+    at HomeView (src/components/BoatCard.tsx:61:49)
+  59 |         <div className="relative aspect-[4/3] bg-navy-800 transition-transform duration-[520ms] ease-[var(--ease-glide)] group-hover:scale-[1.04]">
+  60 |           {image ? (
+> 61 |             <Image src={image} alt={label} fill priority={priority} sizes={sizes} className="object-cover" />
+     |                                                 ^
+  62 |           ) : (
+  63 |             <div className="grid h-full place-items-center font-mono text-xs text-on-dark-muted">
+  64 |               {t.noImage}
+Image with src "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-21.jpg" is using quality "72" which is not configured in images.qualities [75]. Please update your config to [72, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 1473ms (next.js: 586ms, application-code: 887ms)
+[browser] Image with src "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-21.jpg" is using quality "72" which is not configured in images.qualities [75]. Please update your config to [72, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/brand/logo-coral-mono.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET / 200 in 371ms (next.js: 19ms, application-code: 352ms)
+[browser] Image with src "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-21.jpg" is using quality "72" which is not configured in images.qualities [75]. Please update your config to [72, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/brand/logo-coral-mono.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET / 200 in 387ms (next.js: 43ms, application-code: 344ms)
+[browser] Image with src "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-21.jpg" is using quality "72" which is not configured in images.qualities [75]. Please update your config to [72, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/brand/logo-coral-mono.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET / 200 in 144ms (next.js: 15ms, application-code: 130ms)
+ GET / 200 in 384ms (next.js: 33ms, application-code: 351ms)
+[?25h

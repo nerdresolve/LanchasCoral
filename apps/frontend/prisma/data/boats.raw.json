@@ -1,0 +1,2658 @@
+[
+  {
+    "slug": "coral-16",
+    "title": "Coral 16",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16.jpeg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "40 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "90 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "5 pessoas"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (60HP 4T - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "8"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "40 litros"
+          },
+          {
+            "label": "Tanque combustível até 60 HP",
+            "value": "28-60 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "4,86m"
+          },
+          {
+            "label": "Boca",
+            "value": "1,90m"
+          },
+          {
+            "label": "Pontal",
+            "value": "0,90m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,28m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "350Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16-f.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16-k.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16-l.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16-c.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16-m.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16-g.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/lancha-coral-16-n.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2024-03-15-at-11.29.07-3.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2024-03-15-at-11.29.07-2.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2024-03-15-at-11.29.07-1.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2024-03-15-at-11.29.07.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2024-03-15-at-11.29.06-1.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2024-03-15-at-11.29.06.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa aberta com motor de popa",
+          "Versão atual com sofá na proa e opção de pia na popa",
+          "Embarcação Leve, Resistente e Econômica",
+          "Sistema elétrico completo",
+          "Bomba de porão com automático",
+          "Saídas de água com acabamento em inox",
+          "Vários compartimentos para guardar salvatagem e utensílio de uso no dia a dia",
+          "E muito mais, confira na guia Especificações",
+          "Wood Free / 100% em GelColt",
+          "10 anos de Garantia Estrutural!"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "MOLDADO COM RESINA POLIESTER REFORÇADA COM FIBRA DE VIDRO E TECIDO BIAXIAL",
+          "COSTADO MACIÇO",
+          "FUNDO MACIÇO COM ESTRUTURA MONOBLOCO COMPOSTO DE HASTILHAS E LONGARINAS",
+          "ESPELHO DE POPA COM SISTEMA SANDWICH RENICELL ACABAMENTO COM GEL-COAT ISOFITÁLICO",
+          "BUJÃO PARA ESCOAMENTO D’ÁGUA EM INOX",
+          "TANQUE DE COMBUSTÍVEL",
+          "CAIXA DE BATERIA ACABAMENTO EXTERNO EM GEL-COAT ISOFTÁLICO",
+          "SAÍDA D’ÁGUA COM ACABAMENTO INOX",
+          "PISO COM ANTI-DERRAPANTE MOLDADO NA FIBRA D"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-21-2",
+    "title": "Coral 21",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-14-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "90 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "150 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "08 pessoas"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (115HP 4T - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "14"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "120 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "100 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "7,00m"
+          },
+          {
+            "label": "Boca",
+            "value": "2,45m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,05m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,35m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "650Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-14.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-13.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-12.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-11.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-10.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-9.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-8.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG-7.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-drone-1-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-drone-2-Copia-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-drone-3-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-drone-5.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-drone-6-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-drone-7-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-drone-8-Copia.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-e-29-2-Copia.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-e-29-3-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/Coral-21-e-29-4-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/GPTempDownload1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/GPTempDownload2-Copia.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/GPTempDownload3-Copia.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/GPTempDownload-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_0319-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_0322-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_03271.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_0327-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_0342.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_0350.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_0356.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/02/IMG_6211.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/employee.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa aberta com motor de popa",
+          "Para-brisa com vidro",
+          "Pia em fibra de vidro no convés",
+          "Compartimentos sob os Divãs da proa",
+          "Sistema elétrico completo",
+          "Estofamento completo",
+          "Wood Free / 100% em GelColt",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "Moldado com resina poliester reforçada com fibra de vidro e tecido blaxial.",
+          "Costado maciço.",
+          "Fundo maciço com estrutura monobloco composto de hastilhas e longarinas.",
+          "Espelho de popa com sistema sandwich reincell.",
+          "Acabamento com gel- coat isoftálico.",
+          "Bujão para escoamento d'água em inox.",
+          "Tanque de combustível.",
+          "Caixa de bateria.",
+          "A saída d'água possui um acabamento em inox, garantindo durabilidade e resistência à corrosão.",
+          "Os pisos são fabricados com material antiderrapante moldado na fibra de vidro, proporcionando segurança aos tripulantes, mesmo quando o convés estiver molhado ou escorregadio."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-23",
+    "title": "Coral 23",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0866-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "100 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "150 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "10 pessoas"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (115HP 4T - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "14"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "120 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "100 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "7,30m"
+          },
+          {
+            "label": "Boca",
+            "value": "2,45m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,15m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,35m"
+          },
+          {
+            "label": "Peso do motor",
+            "value": "800Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0866.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0858.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0853.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0846.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0879.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0890.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0946.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0896.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0913.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0932.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0935.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0954.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0957.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0964.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0967.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/DJI_0981.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8827.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8891.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8829.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8831.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8851.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8853.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8844.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_9067.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8889.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8890.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8894.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8905.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8907.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8911.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8927.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8931.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8942.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8944.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8950.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8953.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8954.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8959.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8968.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8977.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8980.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8992.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8994.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_8995.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_9007.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_9008.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_9009.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_9011.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_9045.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/IMG_9049.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/employee.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa aberta com motor de popa",
+          "Parabrisa com vidro e targa em fibra de vidro preta",
+          "Pia em fibra de vidro no convés",
+          "Compartimentos sob os Divãs da proa reversíveis em banheiro e/ou cabine",
+          "Sistema elétrico completo",
+          "Estofamento completo",
+          "Vários compartimentos para guardar salvatagem e utensílio de uso no dia a dia",
+          "Wood Free / 100% em GelColt",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco da embarcação é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, proporcionando resistência e durabilidade.",
+          "O costado do casco é maciço, oferecendo maior robustez e estabilidade à embarcação.",
+          "O fundo do casco também é maciço e possui uma estrutura monobloco composta por hastilhas e longarinas, garantindo rigidez e resistência estrutural.",
+          "O espelho de popa é construído com um sistema sandwich Renicell, que consiste em camadas de material laminado para aumentar a resistência e a absorção de impactos na área de popa.",
+          "O acabamento do casco é feito com gel-coat isoftálico, que proporciona um acabamento brilhante e duradouro, além de proteger o casco contra os efeitos do sol, água e intempéries.",
+          "Um bujão de inox é instalado para permitir o escoamento de água acumulada no casco.",
+          "Um tanque de combustível é integrado ao casco para armazenar o combustível necessário para a operação da embarcação.",
+          "Uma caixa de bateria é fornecida para acomodar as baterias utilizadas na embarcação.",
+          "A saída d'água possui um acabamento em inox, garantindo durabilidade e resistência à corrosão.",
+          "Os pisos são fabricados com material antiderrapante moldado na fibra de vidro, proporcionando segurança aos tripulantes, mesmo quando o convés estiver molhado ou escorregadio."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-26-blackline",
+    "title": "Coral 26 – BLACKLINE",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2021/12/Blackline-3-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "150 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "300 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "12 pessoas"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (200HP 4T - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "22"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "17"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "130 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "7,93m"
+          },
+          {
+            "label": "Boca",
+            "value": "2,62m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,45m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,42m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,15m"
+          },
+          {
+            "label": "Peso do motor",
+            "value": "1.300Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Blackline-3.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Blackline-4.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/DJI_0257.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2480-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2477.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2482.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2494.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2495.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2499.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2487.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2485.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2489.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/1S8A2492.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Utiliza motor de Popa",
+          "Compartimentos sob os Divãs da proa reversíveis em banheiro e/ou cabine",
+          "Paineiros sob os assentos do convés",
+          "Para-brisa frontal e lateral em vidro laminado com estrutura em fibra",
+          "Sistema elétrico e hidráulico completo",
+          "Porta copos em teca",
+          "Targa preta em fibra de vidro",
+          "Wood free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [],
+        "items": [
+          "O casco da embarcação possui um acabamento com gel-coat isoftálico, proporcionando durabilidade e resistência aos elementos marinhos.",
+          "Um bujão em inox é instalado para permitir o escoamento da água acumulada no casco.",
+          "Há uma caixa de bateria para acomodar as baterias necessárias para a embarcação.",
+          "O costado do casco é maciço, oferecendo solidez e resistência estrutural.",
+          "O espelho de popa é reforçado com um sistema sandwich renicell, proporcionando maior resistência nessa área crítica do casco.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta de hastilhas e longarinas, garantindo robustez e estabilidade.",
+          "O casco é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, proporcionando uma construção sólida e resistente.",
+          "Há um tanque de combustível instalado para armazenar o combustível necessário para a embarcação.",
+          "O acabamento externo do casco é feito com gel-coat isoftálico, oferecendo proteção contra os elementos marinhos e um acabamento estético.",
+          "A saída de água possui um acabamento em inox, garantindo durabilidade e resistência.",
+          "Os pisos do casco são moldados com uma textura anti-derrapante na fibra de vidro, proporcionando segurança e aderência ao caminhar na embarcação.",
+          "A embarcação possui uma pintura total em black piano, proporcionando um visual elegante e moderno.",
+          "O interior da embarcação é em fibra e inclui 2 vigias e um WC manual.",
+          "A porta de acesso ao convés na popa é feita em teca, com um aro em inox, oferecendo durabilidade e estética.",
+          "Porta copos em teca para acomodar bebidas de forma prática e segura.",
+          "Um toldo de lona acrílica é incluído, proporcionando sombra e proteção contra os elementos.",
+          "O convés, plataforma de popa e wa são revestidos com EVA, oferecendo conforto e aderência ao caminhar.",
+          "Adesivos em inox são aplicados nas laterais da embarcação, adicionando um toque de estilo.",
+          "Um lançador está incluso, facilitando o processo de lançamento de âncora.",
+          "A forração do volante é feita com tecido dos estofados, garantindo conforto e uma sensação de qualidade.",
+          "Um guarda mancebo baixo está presente, oferecendo segurança nas áreas de circulação.",
+          "Um marcador de combustível é instalado, permitindo monitorar o nível de combustível da embarcação."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-26",
+    "title": "Coral 26",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.51-3.webp",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "150 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "300 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "12 pessoas"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (200HP 4T - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "22"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "17"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "130 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "7,93m"
+          },
+          {
+            "label": "Boca",
+            "value": "2,62m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,45m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,42m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,15m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "1.300Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.51-3.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.45-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.50-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.48.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.50.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.51-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.51-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.49.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.50-3.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.46.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.48-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.50-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.48-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.52-3.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.51.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.52-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.53.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2026-04-27-at-17.27.53-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Utiliza motor de Popa",
+          "Compartimentos sob os Divãs da proa reversíveis em banheiro e cabine",
+          "Paineiros sob os assentos do convés",
+          "Para-brisa frontal e lateral em vidro laminado com estrutura em fibra preta",
+          "Sistema elétrico e hidráulico completo",
+          "Porta copos em acrílico",
+          "Targa em fibra de vidro preta",
+          "Wood free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "VERSÕES LAYOUT:",
+          "CASCO:"
+        ],
+        "items": [
+          "O casco é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, proporcionando resistência e durabilidade à estrutura da embarcação.",
+          "O acabamento do casco é feito com gel-coat isoftálico, que oferece proteção contra os elementos marítimos e proporciona um acabamento brilhante.",
+          "Um bujão de escoamento de água em inox é instalado para permitir o escoamento da água acumulada no casco da embarcação.",
+          "Uma caixa de bateria é instalada para acomodar a bateria da embarcação e fornecer energia elétrica aos sistemas a bordo.",
+          "O costado do casco é maciço, garantindo a solidez e resistência da estrutura.",
+          "O espelho de popa possui um sistema sandwich Renicell, que consiste em um material composto para reforçar a área de popa do casco.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta de hastilhas e longarinas, oferecendo estabilidade e resistência.",
+          "O tanque de combustível é instalado para armazenar o combustível necessário para o funcionamento do motor da embarcação.",
+          "O acabamento externo do casco é feito com gel-coat isoftálico, proporcionando proteção contra os elementos e uma aparência atraente.",
+          "A saída d'água possui acabamento em inox, proporcionando durabilidade e resistência à corrosão.",
+          "Os pisos do casco são moldados com anti-derrapante em fibra de vidro, fornecendo uma superfície segura e aderente para caminhar na embarcação."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-29-aberta",
+    "title": "Coral 29 – Aberta",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.30.jpeg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "170 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "300 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "12/02"
+          },
+          {
+            "label": "Capacidade máxima (mar aberto)",
+            "value": "10/02"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (4.5 250HP - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "30"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "23"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "230 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "8,83m"
+          },
+          {
+            "label": "Boca",
+            "value": "2,80m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,60m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,46m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,68m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "1.800Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.30.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.30-3.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.28-3.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.31-1.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.30-1.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.29-1-1.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.31.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.33-1.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.33.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.29-2.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.29-4.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2016/07/WhatsApp-Image-2025-02-04-at-11.11.31-2.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui um acabamento com gel-coat isoftálico, que proporciona proteção e brilho à superfície do casco.",
+          "Um bujão de aço inoxidável é instalado para permitir o escoamento da água acumulada no casco.",
+          "Uma caixa de bateria é colocada para abrigar a(s) bateria(s) da embarcação.",
+          "O costado do casco é maciço, proporcionando solidez e resistência estrutural.",
+          "O espelho de popa do casco é construído com um sistema sandwich renicell, que consiste em camadas de materiais compostos para reforçar a área do espelho de popa.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta por hastilhas e longarinas, proporcionando estabilidade e resistência.",
+          "O casco é moldado com resina de poliéster reforçada com fibra de vidro e tecido biaxial, garantindo resistência e durabilidade.",
+          "Um tanque de combustível é instalado no casco para armazenar o combustível necessário para a embarcação.",
+          "A saída de água do casco possui acabamento em aço inoxidável, garantindo durabilidade e resistência à corrosão.",
+          "Os pisos do casco são moldados com um material antiderrapante em fibra de vidro, proporcionando segurança ao caminhar sobre eles.",
+          "O interior da cabine é revestido em fibra, proporcionando durabilidade e facilidade de limpeza.",
+          "Um colchão é fornecido para garantir conforto durante o descanso na cabine.",
+          "Iluminação é instalada na cabine para fornecer iluminação adequada durante a noite ou em condições de pouca luz.",
+          "Uma vigia é colocada na cabine, permitindo a entrada de luz natural e ventilação.",
+          "Um vaso sanitário manual é instalado no banheiro da cabine, proporcionando um sistema de descarga manual.",
+          "Uma vigia é colocada no banheiro, permitindo entrada de luz natural e ventilação adicional.",
+          "Uma ducha higiênica é fornecida no banheiro, permitindo a higiene pessoal adequada.",
+          "Uma lixeira com tampa em teca é disponibilizada no banheiro para descarte adequado de resíduos.",
+          "A bancada do banheiro é feita em fibra, oferecendo uma superfície resistente e fácil de limpar.",
+          "Um quadro elétrico com acabamento em madeira é instalado para controlar os sistemas elétricos da cabine.",
+          "Um espelho com moldura em madeira é colocado sobre a bancada do banheiro, proporcionando um elemento decorativo e funcional.",
+          "Uma pastilha decorativa é utilizada para adicionar um toque de estilo e personalização ao interior da cabine."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-29-cabinada",
+    "title": "Coral 29 – Cabinada",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2024-03-12-at-16.08.36.webp",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "170 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "350 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "12/02"
+          },
+          {
+            "label": "Capacidade máxima (mar aberto)",
+            "value": "10/02"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (V8 300HP - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "35"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "27"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "230 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "8,83m"
+          },
+          {
+            "label": "Boca",
+            "value": "2,80m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,60m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,46m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,68m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "1.800Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2024-03-12-at-16.08.36.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-02.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-03.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-04.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-05.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-06.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-07.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-08.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-09.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-10.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-27-cabinada-01.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa fechada, utiliza motor de centro rabeta",
+          "Possui uma cama de casal, banheiro e uma espaçosa plataforma de popa com espaço gourmet e geleira",
+          "Vários compartimentos sob os assentos para guardar salvatagem, material de manutenção e uso do dia a dia",
+          "Paineiros sob os assentos do convés",
+          "Para-brisa em com vidro temperado com moldura em fibra de vidro",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco é finalizado com um revestimento de gel-coat isoftálico, um material durável e resistente aos elementos.",
+          "Um bujão de escoamento de água em inox é instalado no casco, permitindo a drenagem adequada.",
+          "Uma caixa de bateria é acomodada no casco, fornecendo um local seguro e acessível para a bateria da embarcação.",
+          "O costado do casco é construído com o sistema sandwich Divinycell, que consiste em camadas de material composto para garantir resistência e rigidez.",
+          "O espelho de popa é construído com o sistema sandwich Renicell, uma estrutura composta que oferece resistência adicional.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta de hastilhas e longarinas, proporcionando resistência e estabilidade.",
+          "O casco é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, oferecendo resistência e durabilidade.",
+          "Um tanque de combustível é instalado no casco, fornecendo armazenamento seguro para o combustível da embarcação.",
+          "Uma saída de água com acabamento em inox é colocada no casco, permitindo a drenagem de água indesejada.",
+          "Os pisos do casco são moldados com um material antiderrapante na fibra de vidro, garantindo segurança e aderência ao caminhar na embarcação."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-30-cabinada",
+    "title": "Coral 30 – Cabinada",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11.webp",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "270 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "540 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "13/05"
+          },
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "11/05"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (6.2 350HP - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "45"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "34"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "230 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "9,14m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,0m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,80m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,50m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,85m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "2.400Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-5.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-3.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-6.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-12.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-4.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-9.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-7.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-8.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-10.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/WhatsApp-Image-2026-01-13-at-10.21.11-11.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa fechada, motorização de centro rabeta",
+          "Possui 2 camas de casal e banheiro",
+          "Para-brisa em vidro temperado com moldura em alumínio",
+          "Targa em fibra de vidro",
+          "Opção de plataforma hidráulica submersível",
+          "Maior espaço interno da categoria",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui acabamento com gel-coat isoftálico, que oferece proteção contra os efeitos do sol e da água.",
+          "Possui um bujão de escoamento de água em inox para facilitar a drenagem do casco.",
+          "Há uma caixa de bateria para acomodar as baterias da embarcação.",
+          "O costado do casco é construído com o sistema sandwich Divinycell, que consiste em camadas de material de alta resistência para garantir maior rigidez e durabilidade.",
+          "O espelho de popa (parte traseira do casco) é reforçado com o sistema sandwich Renycell, proporcionando resistência adicional nessa área.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta por hastilhas (reforços verticais) e longarinas (reforços horizontais) para aumentar a resistência estrutural.",
+          "O casco é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, garantindo uma construção sólida e resistente.",
+          "Possui tanques de combustível para armazenamento de combustível necessário para a embarcação.",
+          "A saída de água do casco possui acabamento em inox, garantindo durabilidade e resistência.",
+          "Os pisos do casco são revestidos com um material antiderrapante moldado na própria fibra de vidro, oferecendo maior segurança e aderência ao caminhar sobre eles.",
+          "Tanque de Combustível."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-32-aberta",
+    "title": "Coral 32A",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.16-1.webp",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "300 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "500 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "11"
+          },
+          {
+            "label": "Capacidade interior",
+            "value": "13"
+          },
+          {
+            "label": "Pernoite",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "230 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "9,80 m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,00 m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,80 m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,50 m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,85 m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "2.600 Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.16-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.12-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.16-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.16.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.13-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.13-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.18-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.13.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.15-3.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.18.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.12.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.14-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.15-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.17-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.15-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-12.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-13.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-14.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-5.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-16.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-4.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-17.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-6.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-3.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-7.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-04-27-at-17.26.17-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-11.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-8.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-9.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-10.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2025/08/WhatsApp-Image-2026-01-13-at-10.30.39-15.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa aberta",
+          "Motorização popa",
+          "Possui 2 camas de casal e banheiro",
+          "Para-brisa baixo em vidro temperado com moldura de fibra",
+          "Passagem lateral para proa",
+          "Maior espaço interno da categoria",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui acabamento com gel-coat isoftálico, proporcionando uma superfície brilhante e durável.",
+          "Há um bujão em inox para escoamento d'água no casco.",
+          "Existe uma caixa de bateria no casco.",
+          "O costado do casco é construído com o sistema sandwich Divinycell, que consiste em camadas de material de núcleo de alta resistência com pele de fibra de vidro laminada em ambos os lados.",
+          "O espelho de popa do casco também é construído com o sistema sandwich Renicell, que utiliza materiais de núcleo reforçados com fibra de vidro para aumentar a resistência e a rigidez.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta por hastilhas e longarinas, proporcionando estabilidade e resistência.",
+          "O casco é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, garantindo uma estrutura sólida e resistente.",
+          "Possui um tanque de combustível.",
+          "A saída d'água do casco possui acabamento em inox.",
+          "Os pisos do casco são moldados com material antiderrapante na fibra de vidro, garantindo segurança e aderência."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-32-cabinada",
+    "title": "Coral 32 Cabinada",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-10-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "300 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "500 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "11"
+          },
+          {
+            "label": "Capacidade interior",
+            "value": "13"
+          },
+          {
+            "label": "Pernoite",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "230 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "10,10m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,0m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,80m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,50m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,85m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "2.600Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-10.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-9.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-19.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-2.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-24.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-25.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-26.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-23.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-21.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/IMG-22.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/b5d0994e-9b73-482c-9830-1f8079d46990.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral32C-Popa-17.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/coral-32-027-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral32C-Popa-14.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-32-8.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-32-1-3.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-32-drone-3-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-32-12.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-2-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/de605726-2cfa-413e-9290-c645de97bf80.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/ad8e2877-8db3-4040-99c4-6ad23d3f3223.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-32-13.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-32-4-2.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/Coral-32-3-2-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa fechada",
+          "Motorização popa",
+          "Possui 2 camas de casal e banheiro",
+          "Parabrisa em vidro temperado com moldura em alumínio",
+          "Targa em fibra de vidro",
+          "Maior espaço interno da categoria",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui acabamento com gel-coat isoftálico, proporcionando uma superfície brilhante e durável.",
+          "Há um bujão em inox para escoamento d'água no casco.",
+          "Existe uma caixa de bateria no casco.",
+          "O costado do casco é construído com o sistema sandwich Divinycell, que consiste em camadas de material de núcleo de alta resistência com pele de fibra de vidro laminada em ambos os lados.",
+          "O espelho de popa do casco também é construído com o sistema sandwich Renicell, que utiliza materiais de núcleo reforçados com fibra de vidro para aumentar a resistência e a rigidez.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta por hastilhas e longarinas, proporcionando estabilidade e resistência.",
+          "O casco é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, garantindo uma estrutura sólida e resistente.",
+          "Possui um tanque de combustível.",
+          "A saída d'água do casco possui acabamento em inox.",
+          "Os pisos do casco são moldados com material antiderrapante na fibra de vidro, garantindo segurança e aderência."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-33-aberta",
+    "title": "Coral 33 – Aberta",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "270 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "540 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "14/03"
+          },
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "12/03"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (6.2 300HP - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "40"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "30"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "230 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "10,06m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,0m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,90m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,50m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,80m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "2.600Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta-02.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta-03.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta-04.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta-05.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta-07.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta-08.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/lancha-coral-33-aberta-09.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Plataforma de popa com espaço gourmet",
+          "Maior embarcação da categoria a oferecer o melhor dos dois mundos",
+          "Acesso a cabine e banheiro sob os Divãs da Proa",
+          "Para-brisa em vidro temperado, Targa em fibra de vidro",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco da embarcação é moldado utilizando resina de poliéster reforçada com fibra de vidro e tecido biaxial. Essa combinação de materiais oferece resistência e durabilidade ao casco.",
+          "O costado do casco possui um sistema sandwich Divinycell, que consiste em um núcleo de espuma rígida de alta qualidade, proporcionando maior rigidez estrutural.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta por hastilhas e longarinas. Essa estrutura reforçada ajuda a distribuir a carga e proporciona maior resistência.",
+          "O espelho de popa do casco também possui um sistema sandwich Renicell, que proporciona maior resistência e rigidez nessa região crítica.",
+          "O acabamento externo do casco é feito com gel-coat isoftálico, que oferece proteção contra os efeitos do sol, água salgada e outros elementos ambientais.",
+          "Um bujão em aço inoxidável é instalado no casco para permitir o escoamento da água quando necessário.",
+          "O casco possui um tanque de combustível para armazenar o combustível necessário para o funcionamento da embarcação.",
+          "Uma caixa de bateria é incluída no casco para acomodar as baterias utilizadas na embarcação.",
+          "Uma saída de água com acabamento em aço inoxidável para permitir o escoamento adequado da água.",
+          "Os pisos do casco são moldados com um material antiderrapante na fibra de vidro, proporcionando segurança ao caminhar na embarcação."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-33-cabinada",
+    "title": "Coral 33 – Cabinada",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/04/Cópia-de-DJI_0805-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "270 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "540 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade máxima (interior)",
+            "value": "14/05"
+          },
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "12/05"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (6.2 350HP - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "45"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "34"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "230 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "250 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "10,06m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,0m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,90m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,50m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,95m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "2.700Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Cópia-de-DJI_0805.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Cópia-de-DJI_0804.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-06.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-08.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-09.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-10.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-13.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-14.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-16.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-17.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-18.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-19.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-20.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-22.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-23.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-24.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-25.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-26.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-27.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-28.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-33C-HT-29.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa fechada, equipada com motor de centro rabeta",
+          "Possui 2 confortáveis camas de casal e banheiro",
+          "Parabrisa em vidro temperado com moldura em alumínio",
+          "Segue as novas linhas externas atualizadas com acabamentos Prime",
+          "Opção de plataforma hidráulica submersível",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco recebe um acabamento com gel-coat isoftálico, proporcionando proteção e brilho à superfície.",
+          "Um bujão de escoamento d'água em inox é instalado para permitir a drenagem da água acumulada no casco.",
+          "Uma caixa de bateria é incorporada para abrigar a(s) bateria(s) da embarcação.",
+          "O costado do casco é construído com um sistema sandwich Divinycell, que consiste em um núcleo de espuma Divinycell entre camadas de fibra de vidro, proporcionando resistência e rigidez.",
+          "O espelho de popa do casco é fabricado com um sistema sandwich Renicell, que utiliza uma camada de material composto entre duas camadas de fibra de vidro, conferindo maior resistência e durabilidade.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta por hastilhas e longarinas, proporcionando estabilidade e resistência.",
+          "O casco é moldado com resina poliéster reforçada com fibra de vidro e tecido biaxial, garantindo resistência e durabilidade.",
+          "Um tanque de combustível é instalado para armazenar o combustível necessário para a embarcação. O acabamento externo do tanque é feito com gel-coat isoftálico, oferecendo proteção e estética.",
+          "Uma saída d'água com acabamento em inox é colocada no casco para permitir o escoamento da água do sistema de refrigeração do motor ou outros sistemas.",
+          "Os pisos do casco são moldados com material antiderrapante na fibra de vidro, proporcionando aderência segura ao caminhar ou movimentar-se na embarcação."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-36-aberta",
+    "title": "Coral 36 – Aberta",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-33-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "350 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "540 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade Máxima (interior)",
+            "value": "16/05"
+          },
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "14/04"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (2x 4.5 250HP - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "60"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "45"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (2x 2.8 220HP - Diesel)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "40"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "30"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "220 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "380 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "10,97m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,05m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,90m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,50m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,82m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "2.900Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-33.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-21.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-31.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-6.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-7.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-8.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-9.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-4.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-13.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-11.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG-10.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-085-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-171-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-096-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-101-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-209-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-064-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-073-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/dji_fly_20240403_114650_138_1712155636999_photo_optimized-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/coral-36-A-RBS-2024.jpg-1-1-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/coral-36-A-RBS-2024-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/dji_fly_20240403_114550_135_1712155566518_photo_optimized-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-148-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-054-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-058-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-097-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-143-scaled-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Pode ser equipada com motor de centro rabeta ou popa (Uma grande novidade da Lanchas Coral!)",
+          "Plataforma de popa com espaço gourmet",
+          "Acesso a cabine e banheiro sob os Divãs da Proa",
+          "Para-brisa em vidro temperado, Targa em fibra de vidro",
+          "Segue as novas linhas externas atualizadas com acabamentos Prime",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!",
+          "E muito mais, confira na guia Especificações"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui um acabamento com gel-coat isoftálico, que proporciona proteção e brilho duradouros.",
+          "Um bujão de aço inoxidável é instalado para permitir o escoamento da água.",
+          "Uma caixa de bateria é colocada no casco para acomodar a bateria da embarcação.",
+          "O costado do casco é construído com um sistema sandwich divinycell e biaxial, que consiste em camadas de material composto para aumentar a resistência e rigidez estrutural.",
+          "O espelho de popa também é construído com um sistema sandwich renicell, que utiliza camadas de material composto para garantir durabilidade e resistência.",
+          "O fundo do casco é maciço e possui uma estrutura monobloco composta por hastilhas e longarinas, fornecendo estabilidade e resistência adicionais.",
+          "O casco é moldado com resina de poliéster reforçada com fibra de vidro e tecido biaxial, garantindo uma estrutura sólida e durável.",
+          "Um tanque de combustível é instalado no casco para armazenar o combustível necessário para a embarcação.",
+          "Há uma saída de água com acabamento em aço inoxidável, utilizada para a saída de água do sistema de refrigeração do motor ou de outros sistemas.",
+          "Os pisos do casco são moldados com uma superfície antiderrapante, proporcionando segurança e aderência ao caminhar pela embarcação."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-36-cabinada",
+    "title": "Coral 36 – Cabinada",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG_9758.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "350 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "540 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade Máxima (interior)",
+            "value": "16/06"
+          },
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "14/06"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (2x 4.5 250HP - Gasolina)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "60"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "45"
+          }
+        ]
+      },
+      {
+        "group": "Desempenho (2x 2.8 220HP - Diesel)",
+        "rows": [
+          {
+            "label": "Consumo em cruzeiro (L/H)",
+            "value": "40"
+          },
+          {
+            "label": "Consumo médio do passeio (L/H)",
+            "value": "30"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "220 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "380 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "10,97m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,05m"
+          },
+          {
+            "label": "Pontal",
+            "value": "1,90m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,50m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,90m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "3.000Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG_9758.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG_9767.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-3.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-4.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-5.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-6.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-7.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-8.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-9.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-10-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-10.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-11.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-12.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG_9748.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/IMG_9763.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-leve-2.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa fechada, e pode ser equipada com motor de centro rabeta ou popa (Uma grande novidade da Lanchas Coral!)",
+          "Possui 2 confortáveis camas de casal e banheiro",
+          "Opção de 3º cabine na versão popa",
+          "Segue as novas linhas externas atualizadas com acabamentos Prime",
+          "Opção de plataforma hidráulica submersível",
+          "E muito mais, confira na guia Especificações",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O acabamento do casco é feito com gel-coat isoftálico, proporcionando uma camada protetora resistente e durável.",
+          "Há um bujão em inox para o escoamento de água do casco.",
+          "O casco possui uma caixa de bateria, que abriga as baterias necessárias para o funcionamento da embarcação.",
+          "O costado do casco é construído com um sistema sandwich divinycell, que utiliza um núcleo de material leve e resistente entre camadas de fibra de vidro, proporcionando rigidez e leveza.",
+          "O espelho de popa também utiliza o sistema sandwich, com o uso de renicell, um material que contribui para a estrutura e resistência do espelho.",
+          "O fundo do casco é maciço, com uma estrutura monobloco composta por hastilhas e longarinas, proporcionando estabilidade e resistência.",
+          "O casco é moldado com resina de poliéster reforçada com fibra de vidro e tecido biaxial, garantindo uma estrutura sólida e durável.",
+          "Há um tanque de combustível na embarcação, que armazena o combustível necessário para o funcionamento do motor.",
+          "A saída de água do casco possui um acabamento em inox, garantindo durabilidade e resistência.",
+          "Os pisos do casco são moldados com um material antiderrapante na fibra de vidro, proporcionando segurança e aderência durante a movimentação na embarcação."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-40",
+    "title": "Coral 40A Sea Breeze",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-4-1.webp",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "540 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "860 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade Máxima (interior)",
+            "value": "16/06"
+          },
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "14/06"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "310 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "500 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "12,19m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,60m"
+          },
+          {
+            "label": "Pontal",
+            "value": "2,39m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,60m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "2,0m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "6.000Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-4-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-8-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-9-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-10-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-11-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-18.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-22-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-25.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-27-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-28-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-29-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/ad163ad0-7574-4aa0-a487-23e31bffb9a4.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/5b4608d1-5c91-4f99-891f-6c5ea2cecd2c.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/c636f9b6-5910-4f2c-b222-1af6ae9e62b8.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/e4c77300-4f39-420c-b948-57b50b7ff49a.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/83666880-ad23-4106-9789-cb11b3c7a3f0.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/838c5fc9-85e0-4153-b960-5a2a3cb7a8c3.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/1945117b-cac9-48be-9037-e01979624ce9.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/751ba2ec-cfe9-4acb-8c02-55739cafc815.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/d9d5e9b1-eac1-41e6-ac1f-7134ff7409b8.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/0e256d6b-e406-4cc2-a11c-eb02cb3fe01d.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/287f8a07-f9c1-4af7-903a-759c513fb74c.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/366426b9-f1ea-452a-86ba-14f80aab057b.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/2742bc92-31a0-46ea-a456-eefcbf49ee75.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/f94b7406-972e-4ad7-b809-1ae2c7aca290.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/4b59d7da-c61b-442e-a173-7139777ac0a2.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/8ffc7ed9-56ea-47ad-b944-e0596c4c0f53.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/88c1f374-38fd-4a2f-9ce1-248adaf6a3bf.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-26.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/cc27d37f-2d05-461a-9a98-94e596edb238.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/afdd54a6-7bf7-499f-a5ed-5b6d024d2a82.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/03026577-98a1-4f19-8598-b20dcb3615b5.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-31-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-32-1.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-140123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-141123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-143123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-144123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-145123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-146123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-147123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-148123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-149123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-150123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-151123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-152123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-153123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-154123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-159123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-160123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG-161123.webp",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Tem sua cabine equipada com 2 belíssimos quartos, sendo o de meia nau com porta de série, banheiro e cozinha",
+          "Passagem segura para proa a bombordo",
+          "Motorização de centro rabeta",
+          "Teto Sea Breeze de série",
+          "Espaço gourmet na popa equipado com geleira, pia e churrasqueira embutida",
+          "Segue as novas linhas externas atualizadas com acabamentos Prime",
+          "Opção de plataforma hidráulica submersível",
+          "E muito mais, confira na guia Especificações",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui um acabamento com gel-coat isoftálico, que proporciona proteção à superfície.",
+          "Ele é moldado com resina poliéster, reforçado com fibra de vidro e tecido biaxial, garantindo resistência e durabilidade.",
+          "O costado e o fundo do casco são reforçados com o sistema sandwich Divinycell, que consiste em um núcleo de material celular de alta densidade entre camadas de fibra de vidro, proporcionando rigidez e resistência estrutural.",
+          "O fundo do casco é reforçado com estrutura de hastilhas e longarinas, adicionando ainda mais resistência e estabilidade.",
+          "O casco possui um bujão em aço inoxidável para o escoamento da água.",
+          "Existem três caixas de bateria no casco, fornecendo espaço para acomodar as baterias necessárias.",
+          "O espelho de popa do casco é construído com o sistema sandwich Renycell, que segue uma estrutura semelhante ao costado e fundo, proporcionando resistência adicional na área da popa.",
+          "O tanque de combustível é rotomoldado em polietileno, garantindo segurança e durabilidade no armazenamento de combustível.",
+          "A saída de água possui acabamento em aço inoxidável, proporcionando um visual elegante e resistente."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-42-2",
+    "title": "Coral 42",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-1-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "520 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "860 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade Máxima (interior)",
+            "value": "16/06"
+          },
+          {
+            "label": "Capacidade Máxima (Mar Aberto)",
+            "value": "14/06"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "310 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "500 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "12,80m"
+          },
+          {
+            "label": "Boca",
+            "value": "3,60m"
+          },
+          {
+            "label": "Pontal",
+            "value": "2,20m"
+          },
+          {
+            "label": "Calado",
+            "value": "0,70m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "1,90m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "6.000Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-12.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-14.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-15.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-19.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-16.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-20.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/IMG-21.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/Coral-42-3.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Proa fechada e equipada com 2 belíssimos quartos, banheiro e cozinha",
+          "Motorização de centro rabeta",
+          "Hard Top (HT) de série",
+          "Espaço gourmet na popa equipado com geleira, pia e local para churrasqueira elétrica",
+          "Segue as novas linhas externas atualizadas com acabamentos Prime",
+          "Opção de plataforma hidráulica submersível",
+          "E muito mais, confira na guia Especificações",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui um acabamento com gel-coat isoftálico, que proporciona proteção e brilho à superfície.",
+          "Ele é moldado com resina poliéster, reforçado com fibra de vidro e tecido biaxial, garantindo resistência e durabilidade.",
+          "O costado e o fundo do casco são reforçados com o sistema sandwich Divinycell, que consiste em um núcleo de material celular de alta densidade entre camadas de fibra de vidro, proporcionando rigidez e resistência estrutural.",
+          "O fundo do casco é reforçado com estrutura de hastilhas e longarinas, adicionando ainda mais resistência e estabilidade.",
+          "O casco possui um bujão em aço inoxidável para o escoamento da água.",
+          "Existem três caixas de bateria no casco, fornecendo espaço para acomodar as baterias necessárias.",
+          "O espelho de popa do casco é construído com o sistema sandwich Renycell, que segue uma estrutura semelhante ao costado e fundo, proporcionando resistência adicional na área da popa.",
+          "O tanque de combustível é rotomoldado em polietileno, garantindo segurança e durabilidade no armazenamento de combustível.",
+          "A saída de água possui acabamento em aço inoxidável, proporcionando um visual elegante e resistente."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-50-ht-2",
+    "title": "Coral 50 Fly",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2024/05/coral-coral-50-fLY-8e01f1f81bbf5f14858bbb15-1.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "660 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "860 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade (interior)",
+            "value": "14/11"
+          },
+          {
+            "label": "Capacidade (Mar Aberto)",
+            "value": "16/11"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "850 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "650 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "15,24m"
+          },
+          {
+            "label": "Boca",
+            "value": "4,05m"
+          },
+          {
+            "label": "Pontal",
+            "value": "2,10m"
+          },
+          {
+            "label": "Calado",
+            "value": "1,00m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "2,18m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "12.000 Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/coral-coral-50-fLY-8e01f1f81bbf5f14858bbb15-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-2.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-7.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-5.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-8.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-9.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-6.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-1.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-4.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-3.jpg.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-11.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144221.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144226.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144304.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144345.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144458.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144529.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144616.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144623.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144640.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144645.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144723.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144736.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/20230728_144832.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/50-para-fundo.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Motor de centro rabeta ou IPS",
+          "Fly como opcional, Porta em Inox com vidro temperado para fechamento do cockpit",
+          "Segue as novas linhas externas atualizadas com acabamentos Prime",
+          "Opção de plataforma submersível e/ou Fly",
+          "A mais Econômica da Categoria",
+          "E muito mais, confira na guia Especificações",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui um acabamento com gel-coat isoftálico, proporcionando uma camada protetora resistente e durável.",
+          "Ele é moldado com resina poliéster, reforçado com fibra de vidro e tecido biaxial, garantindo resistência estrutural e durabilidade.",
+          "O costado e o fundo do casco são reforçados com o sistema sandwich Divinycell, que consiste em um núcleo de material sintético rígido entre duas camadas de fibra de vidro, proporcionando resistência e rigidez adicionais.",
+          "O fundo do casco é reforçado com uma estrutura de hastilhas e longarinas, oferecendo suporte adicional e resistência.",
+          "O espelho de popa é reforçado com o sistema sandwich Renycell, proporcionando resistência e durabilidade na área traseira do casco.",
+          "Um bujão em inox é utilizado para o escoamento da água no casco, garantindo a drenagem adequada.",
+          "Uma caixa de bateria no casco, fornecendo um local para acomodar as baterias do barco.",
+          "Os tanques de combustível estão presentes no casco, proporcionando armazenamento seguro e adequado para o combustível.",
+          "A saída de água no casco possui acabamento em inox, garantindo durabilidade e resistência à corrosão."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coral-50-ht",
+    "title": "Coral 50 HT",
+    "desc": "",
+    "ogimg": "https://lanchascoral.com.br/wp-content/uploads/2020/04/essa-1-Copia-scaled.jpg",
+    "groups": [
+      {
+        "group": "Motor",
+        "rows": [
+          {
+            "label": "Motorização mínima",
+            "value": "660 HP"
+          },
+          {
+            "label": "Motorização máxima",
+            "value": "860 HP"
+          }
+        ]
+      },
+      {
+        "group": "Capacidade",
+        "rows": [
+          {
+            "label": "Capacidade (interior)",
+            "value": "14/11"
+          },
+          {
+            "label": "Capacidade (Mar Aberto)",
+            "value": "16/11"
+          }
+        ]
+      },
+      {
+        "group": "Tanques",
+        "rows": [
+          {
+            "label": "Água",
+            "value": "850 litros"
+          },
+          {
+            "label": "Tanque combustível",
+            "value": "800 litros"
+          }
+        ]
+      },
+      {
+        "group": "Dimensões",
+        "rows": [
+          {
+            "label": "Comprimento",
+            "value": "15,24m"
+          },
+          {
+            "label": "Boca",
+            "value": "4,05m"
+          },
+          {
+            "label": "Pontal",
+            "value": "2,10m"
+          },
+          {
+            "label": "Calado",
+            "value": "1,00m"
+          },
+          {
+            "label": "Pé direito da cabine",
+            "value": "2,10m"
+          },
+          {
+            "label": "Peso sem motor",
+            "value": "10.800Kg"
+          }
+        ]
+      }
+    ],
+    "images": [
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/essa-1-Copia.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/coral-50-ht.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/coral-50-HT-2.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/coral-50-HT-3.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/Coral-50-HT-RBS-2024.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/coral-50-HT-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-002.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-041.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/CAMERA-030.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/04/essa-2-Copia.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG_9780.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/WhatsApp-Image-2023-05-19-at-14.11.00-3-350x181-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/WhatsApp-Image-2023-05-19-at-14.11.01-3-350x181-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG_9779.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG_9774.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/WhatsApp-Image-2023-05-19-at-14.11.00-2-350x181-1.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2024/05/IMG_9781.jpg",
+      "https://lanchascoral.com.br/wp-content/uploads/2021/12/manager.png",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/WhatsApp-Image-2025-01-27-at-12.56.34.jpeg",
+      "https://lanchascoral.com.br/wp-content/uploads/2020/06/gel.jpg"
+    ],
+    "equip": [
+      {
+        "panel": "Descrição",
+        "sections": [],
+        "items": [
+          "Motor de centro rabeta ou IPS",
+          "HardTop (HT) de série com opção de Porta em Inox com vidro temperado para fechamento do cockpit",
+          "Segue as novas linhas externas atualizadas com acabamentos Prime",
+          "Opção de plataforma submersível e/ou Fly",
+          "A mais Econômica da Categoria",
+          "E muito mais, confira na guia Especificações",
+          "Wood Free / 100% GelCoat",
+          "Altamente customizável",
+          "10 anos de Garantia Estrutural!"
+        ]
+      },
+      {
+        "panel": "Equipamentos de série",
+        "sections": [
+          "CASCO:"
+        ],
+        "items": [
+          "O casco possui um acabamento com gel-coat isoftálico, proporcionando uma camada protetora resistente e durável.",
+          "Ele é moldado com resina poliéster, reforçado com fibra de vidro e tecido biaxial, garantindo resistência estrutural e durabilidade.",
+          "O costado e o fundo do casco são reforçados com o sistema sandwich Divinycell, que consiste em um núcleo de material sintético rígido entre duas camadas de fibra de vidro, proporcionando resistência e rigidez adicionais.",
+          "O fundo do casco é reforçado com uma estrutura de hastilhas e longarinas, oferecendo suporte adicional e resistência.",
+          "O espelho de popa é reforçado com o sistema sandwich Renycell, proporcionando resistência e durabilidade na área traseira do casco.",
+          "Um bujão em inox é utilizado para o escoamento da água no casco, garantindo a drenagem adequada.",
+          "Uma caixa de bateria no casco, fornecendo um local para acomodar as baterias do barco.",
+          "Os tanques de combustível estão presentes no casco, proporcionando armazenamento seguro e adequado para o combustível.",
+          "A saída de água no casco possui acabamento em inox, garantindo durabilidade e resistência à corrosão."
+        ]
+      }
+    ]
+  }
+]

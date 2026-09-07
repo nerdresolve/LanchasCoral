@@ -1,0 +1,382 @@
+{
+ "linhas": [
+  {
+   "perfil": "mobile",
+   "rota": "/",
+   "performance": 85,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/modelos",
+   "performance": 89,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/modelos/coral-40",
+   "performance": 93,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/broker",
+   "performance": 88,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/broker/coral-26-2026",
+   "performance": 93,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/sobre",
+   "performance": 96,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/contato",
+   "performance": 95,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/venda-sua-lancha",
+   "performance": 96,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/solicitar-manual",
+   "performance": 95,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/trabalhe-conosco",
+   "performance": 95,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/contato-para-servicos",
+   "performance": 95,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/politica-de-qualidade",
+   "performance": 95,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/politica-de-privacidade",
+   "performance": 93,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/en",
+   "performance": 86,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/en/models",
+   "performance": 97,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/en/broker",
+   "performance": 90,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  {
+   "perfil": "mobile",
+   "rota": "/en/about",
+   "performance": 94,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  }
+ ],
+ "problemas": [
+  {
+   "cat": "performance",
+   "id": "largest-contentful-paint",
+   "titulo": "Largest Contentful Paint",
+   "rotas": [
+    "mobile/",
+    "mobile/modelos",
+    "mobile/modelos/coral-40",
+    "mobile/broker",
+    "mobile/broker/coral-26-2026",
+    "mobile/contato",
+    "mobile/solicitar-manual",
+    "mobile/trabalhe-conosco",
+    "mobile/contato-para-servicos",
+    "mobile/politica-de-qualidade",
+    "mobile/politica-de-privacidade",
+    "mobile/en",
+    "mobile/en/broker",
+    "mobile/en/about"
+   ],
+   "peso": 109,
+   "exemplo": "4.3 s"
+  },
+  {
+   "cat": "performance",
+   "id": "speed-index",
+   "titulo": "Speed Index",
+   "rotas": [
+    "mobile/politica-de-privacidade"
+   ],
+   "peso": 2.0999999999999996,
+   "exemplo": "4.1 s"
+  },
+  {
+   "cat": "performance",
+   "id": "image-delivery-insight",
+   "titulo": "Improve image delivery",
+   "rotas": [
+    "mobile/",
+    "mobile/en"
+   ],
+   "peso": 0,
+   "exemplo": "Est savings of 88 KiB"
+  },
+  {
+   "cat": "performance",
+   "id": "legacy-javascript-insight",
+   "titulo": "Legacy JavaScript",
+   "rotas": [
+    "mobile/",
+    "mobile/modelos",
+    "mobile/modelos/coral-40",
+    "mobile/broker",
+    "mobile/broker/coral-26-2026",
+    "mobile/contato",
+    "mobile/solicitar-manual",
+    "mobile/trabalhe-conosco",
+    "mobile/contato-para-servicos",
+    "mobile/politica-de-qualidade",
+    "mobile/politica-de-privacidade",
+    "mobile/en",
+    "mobile/en/broker",
+    "mobile/en/about"
+   ],
+   "peso": 0,
+   "exemplo": "Est savings of 14 KiB"
+  },
+  {
+   "cat": "performance",
+   "id": "render-blocking-insight",
+   "titulo": "Render-blocking requests",
+   "rotas": [
+    "mobile/",
+    "mobile/modelos",
+    "mobile/modelos/coral-40",
+    "mobile/broker",
+    "mobile/broker/coral-26-2026",
+    "mobile/contato",
+    "mobile/solicitar-manual",
+    "mobile/trabalhe-conosco",
+    "mobile/contato-para-servicos",
+    "mobile/politica-de-qualidade",
+    "mobile/politica-de-privacidade",
+    "mobile/en",
+    "mobile/en/broker",
+    "mobile/en/about"
+   ],
+   "peso": 0,
+   "exemplo": "Est savings of 130 ms"
+  },
+  {
+   "cat": "performance",
+   "id": "interactive",
+   "titulo": "Time to Interactive",
+   "rotas": [
+    "mobile/",
+    "mobile/modelos",
+    "mobile/broker",
+    "mobile/en",
+    "mobile/en/broker"
+   ],
+   "peso": 0,
+   "exemplo": "4.3 s"
+  },
+  {
+   "cat": "performance",
+   "id": "max-potential-fid",
+   "titulo": "Max Potential First Input Delay",
+   "rotas": [
+    "mobile/",
+    "mobile/modelos",
+    "mobile/broker",
+    "mobile/contato-para-servicos",
+    "mobile/politica-de-privacidade",
+    "mobile/en/broker",
+    "mobile/en/about"
+   ],
+   "peso": 0,
+   "exemplo": "200 ms"
+  },
+  {
+   "cat": "performance",
+   "id": "unused-javascript",
+   "titulo": "Reduce unused JavaScript",
+   "rotas": [
+    "mobile/",
+    "mobile/modelos",
+    "mobile/modelos/coral-40",
+    "mobile/broker",
+    "mobile/broker/coral-26-2026",
+    "mobile/contato",
+    "mobile/solicitar-manual",
+    "mobile/trabalhe-conosco",
+    "mobile/contato-para-servicos",
+    "mobile/politica-de-qualidade",
+    "mobile/politica-de-privacidade",
+    "mobile/en",
+    "mobile/en/broker",
+    "mobile/en/about"
+   ],
+   "peso": 0,
+   "exemplo": "Est savings of 27 KiB"
+  },
+  {
+   "cat": "performance",
+   "id": "lcp-discovery-insight",
+   "titulo": "LCP request discovery",
+   "rotas": [
+    "mobile/modelos",
+    "mobile/modelos/coral-40",
+    "mobile/broker",
+    "mobile/broker/coral-26-2026",
+    "mobile/en/broker",
+    "mobile/en/about"
+   ],
+   "peso": 0,
+   "exemplo": ""
+  },
+  {
+   "cat": "performance",
+   "id": "bf-cache",
+   "titulo": "Page prevented back/forward cache restoration",
+   "rotas": [
+    "mobile/modelos"
+   ],
+   "peso": 0,
+   "exemplo": "2 failure reasons"
+  },
+  {
+   "cat": "performance",
+   "id": "network-dependency-tree-insight",
+   "titulo": "Network dependency tree",
+   "rotas": [
+    "mobile/modelos/coral-40",
+    "mobile/broker/coral-26-2026",
+    "mobile/solicitar-manual",
+    "mobile/trabalhe-conosco",
+    "mobile/contato-para-servicos",
+    "mobile/politica-de-qualidade",
+    "mobile/politica-de-privacidade",
+    "mobile/en/about"
+   ],
+   "peso": 0,
+   "exemplo": ""
+  },
+  {
+   "cat": "performance",
+   "id": "cache-insight",
+   "titulo": "Use efficient cache lifetimes",
+   "rotas": [
+    "mobile/contato",
+    "mobile/solicitar-manual",
+    "mobile/trabalhe-conosco",
+    "mobile/contato-para-servicos",
+    "mobile/politica-de-qualidade"
+   ],
+   "peso": 0,
+   "exemplo": "Est savings of 3 KiB"
+  },
+  {
+   "cat": "performance",
+   "id": "forced-reflow-insight",
+   "titulo": "Forced reflow",
+   "rotas": [
+    "mobile/contato",
+    "mobile/en/broker"
+   ],
+   "peso": 0,
+   "exemplo": ""
+  },
+  {
+   "cat": "performance",
+   "id": "document-latency-insight",
+   "titulo": "Document request latency",
+   "rotas": [
+    "mobile/politica-de-privacidade"
+   ],
+   "peso": 0,
+   "exemplo": "Est savings of 2,440 ms"
+  },
+  {
+   "cat": "performance",
+   "id": "lcp-breakdown-insight",
+   "titulo": "LCP breakdown",
+   "rotas": [
+    "mobile/politica-de-privacidade"
+   ],
+   "peso": 0,
+   "exemplo": ""
+  },
+  {
+   "cat": "performance",
+   "id": "server-response-time",
+   "titulo": "Reduce initial server response time",
+   "rotas": [
+    "mobile/politica-de-privacidade"
+   ],
+   "peso": 0,
+   "exemplo": "Root document took 2,540 ms"
+  }
+ ]
+}

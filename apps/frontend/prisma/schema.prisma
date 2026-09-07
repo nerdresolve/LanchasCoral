@@ -1,0 +1,367 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// Boat family groups models in the nav (e.g. "Coral 26" -> standard + BLACKLINE).
+model Family {
+  id    String @id @default(cuid())
+  name  String @unique
+  slug  String @unique
+  order Int    @default(0)
+  boats Boat[]
+}
+
+model Boat {
+  id          String  @id @default(cuid())
+  slug        String  @unique
+  name        String
+  variant     String?
+  tagline     String?
+  description String? @db.Text
+
+  /// Versoes em ingles. Vazias caem no texto em portugues.
+  variantEn     String?
+  taglineEn     String?
+  descriptionEn String? @db.Text
+
+  familyId String?
+  family   Family? @relation(fields: [familyId], references: [id], onDelete: SetNull)
+
+  // --- Universal specs: fixed typed columns so the admin form has real fields ---
+  lengthM          Decimal? @db.Decimal(5, 2)
+  beamM            Decimal? @db.Decimal(5, 2)
+  draftM           Decimal? @db.Decimal(5, 2)
+  depthM           Decimal? @db.Decimal(5, 2)
+  cabinHeightM     Decimal? @db.Decimal(5, 2)
+  weightKg         Int? // Peso sem motor (hull, no engine)
+  engineWeightKg   Int? // Peso do motor (some models list this instead)
+  fuelL            Int?
+  waterL           Int?
+  powerMinHp       Int?
+  powerMaxHp       Int?
+  capInteriorDay   Int?
+  capInteriorNight Int?
+  capOpenSeaDay    Int?
+  capOpenSeaNight  Int?
+
+  /// Engine/performance variants: 0..2 per boat, shape varies -> JSON is correct here.
+  performance Json?
+
+  published Boolean @default(true)
+  order     Int     @default(0)
+  heroImage String?
+
+  seoTitle       String?
+  seoDescription String? @db.Text
+
+  /// Memorial descritivo em PDF, servido de /public/memoriais.
+  manualUrl String?
+
+  images    BoatImage[]
+  equipment Equipment[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, order])
+}
+
+model BoatImage {
+  id     String  @id @default(cuid())
+  boatId String
+  boat   Boat    @relation(fields: [boatId], references: [id], onDelete: Cascade)
+  url    String
+  alt    String?
+  order  Int     @default(0)
+
+  @@index([boatId, order])
+}
+
+model Equipment {
+  id      String  @id @default(cuid())
+  boatId  String
+  boat    Boat    @relation(fields: [boatId], references: [id], onDelete: Cascade)
+  panel   String
+  section String?
+  text    String  @db.Text
+  /// Traducao opcional; vazia cai no texto em portugues.
+  textEn  String? @db.Text
+  order   Int     @default(0)
+
+  @@index([boatId, panel, order])
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String?
+  passwordHash String
+
+  /// Só "ADMIN" abre o painel (ver requireAdmin em src/lib/auth.ts).
+  /// O padrão é o papel sem poder: um usuário criado sem que alguém decida
+  /// o papel dele não deve nascer podendo apagar modelos e ler os contatos
+  /// dos clientes. Quem precisa de acesso recebe ADMIN explicitamente.
+  role         String   @default("VIEWER")
+  createdAt    DateTime @default(now())
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model Inquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String?  @db.Text
+  boatSlug  String?
+  kind      String   @default("CONTATO")
+  handled   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  /// Quando o memorial foi enviado por e-mail a quem pediu, e para onde.
+  /// Preenchido só pelo botão do painel: o envio nunca é automático, para
+  /// que ninguém mande material tecnico a um concorrente por descuido.
+  manualSentAt DateTime?
+  manualSentTo String?
+
+  @@index([handled, createdAt])
+}
+
+/// Coral Broker: embarcacoes seminovas intermediadas pelo estaleiro.
+/// Estoque proprio, separado da linha de fabrica (model Boat).
+model Listing {
+  id    String  @id @default(cuid())
+  slug  String  @unique
+  title String // "Coral 40A FULL [2024]"
+  brand String? // Coral, Real, Sea-Doo, Triton, Solara
+  kind  String  @default("LANCHA") // LANCHA | JETSKI
+
+  year       Int?
+  priceBrl   Int? // em reais, sem centavos
+  sizeFt     Int? // "Tamanho" no site de origem (pes)
+  fuel       String? // Diesel, Gasolina
+  hullType   String? // Fibra de Vidro
+  /// Derivado do texto da motorizacao; alimenta o filtro do broker.
+  /// Popa | Centro - Rabeta | Centro - Parelha | Centro - Single | Hidrojato
+  engineType String?
+  engine     String? @db.Text // "Mercruiser 3.0L V6..."
+  capacity   String? // "1+15"
+  hours      String? // "26 horas BB e 0 hora BE"
+  place      String?
+  tag        String? // "Certificado", "Unico dono"
+
+  description String? @db.Text
+  heroImage   String?
+  /// URL do anuncio no site de origem, para rastreio da migracao.
+  sourceUrl   String?
+
+  published Boolean @default(true)
+  sold      Boolean @default(false)
+  order     Int     @default(0)
+
+  images      ListingImage[]
+  accessories ListingAccessory[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, order])
+  @@index([kind, published])
+}
+
+model ListingImage {
+  id        String  @id @default(cuid())
+  listingId String
+  listing   Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  url       String
+  alt       String?
+  order     Int     @default(0)
+
+  @@index([listingId, order])
+}
+
+model ListingAccessory {
+  id        String  @id @default(cuid())
+  listingId String
+  listing   Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  text      String
+  order     Int     @default(0)
+
+  @@index([listingId, order])
+}
+
+/// Registro de tentativas de login, para travar ataques de forca bruta.
+/// Guarda apenas o identificador tentado e a origem — nunca a senha.
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  /// Chave de agrupamento: "ip:<endereco>" ou "email:<identificador>".
+  key       String
+  success   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
+}
+
+/// Artigos de /dicas, migrados do blog do site legado.
+/// Conteudo editorial tecnico: sustenta busca de cauda longa e responde
+/// duvidas de quem pesquisa antes de comprar.
+model Article {
+  id      String  @id @default(cuid())
+  slug    String  @unique
+  title   String
+  /// Resumo curto; alimenta o card do indice e a meta description.
+  excerpt String? @db.Text
+  /// Corpo em paragrafos, na ordem de leitura.
+  body    String[]
+  /// Versoes em ingles. Vazias caem no texto em portugues.
+  titleEn   String?
+  excerptEn String? @db.Text
+  bodyEn    String[]
+
+  heroImage String?
+  /// Data de publicacao no site de origem, quando conhecida.
+  publishedAt DateTime?
+  published   Boolean   @default(true)
+  order       Int       @default(0)
+
+  seoTitle       String?
+  seoDescription String? @db.Text
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, order])
+}
+
+/// Ponto focal de atendimento, editável pelo painel.
+///
+/// Existe para que trocar um telefone não exija mexer no código: os mesmos
+/// dados aparecem no rodapé, na página de contatos, na de contato comercial e
+/// no JSON-LD entregue ao Google. Antes viviam em `src/lib/company.ts`, e uma
+/// troca de número obrigava a editar o arquivo e republicar o site.
+///
+/// A chave é a FINALIDADE (`comercial`, `assistencia`, `compras`), não o
+/// lugar onde aparece: editar uma vez muda todos os pontos que servem àquela
+/// finalidade, que é justamente o que se espera de um ponto focal.
+model ContactPoint {
+  id  String @id @default(cuid())
+  /// Finalidade do canal. Casa com as chaves do dicionário de idiomas.
+  key String @unique
+
+  /// Rótulo mostrado ao visitante. Em branco, usa o texto do dicionário.
+  label   String?
+  labelEn String?
+
+  /// Telefones em ordem de preferência, como devem ser exibidos.
+  phones String[]
+  /// Número do WhatsApp só com dígitos e DDI (5521999999999). Nulo: sem botão.
+  whatsapp String?
+  email    String?
+
+  /// Horário de atendimento deste ponto. Em branco, usa o horário geral.
+  hours   String?
+  hoursEn String?
+
+  /// Ordem de exibição nas listas.
+  order     Int      @default(0)
+  /// Desligado some do site sem perder o cadastro.
+  active    Boolean  @default(true)
+  updatedAt DateTime @updatedAt
+
+  @@index([active, order])
+}
+
+/// Configuração do envio de e-mail, editável pelo painel.
+///
+/// Linha única (`id` fixo em "singleton"): não existe cenário com duas
+/// configurações, e a chave fixa evita o estado ambíguo de "qual das linhas
+/// vale". Antes tudo isto vivia em variáveis de ambiente, e mudar o remetente
+/// exigia acesso ao servidor e um restart.
+model MailSettings {
+  id String @id @default("singleton")
+
+  // --- Servidor de saída ---
+  host       String?
+  port       Int     @default(465)
+  secure     Boolean @default(true)
+  /// Nome a validar no certificado quando difere do host. Ver mailer.ts.
+  serverName String?
+  user       String?
+  /// Senha cifrada com AES-256-GCM (src/lib/cripto.ts). NUNCA em texto puro:
+  /// esta tabela entra nas cópias de segurança, e um dump vazado entregaria
+  /// a caixa de e-mail da empresa.
+  passEnc    String?
+
+  // --- Identidade do remetente ---
+  fromEmail String?
+  fromName  String  @default("Coral Indústria Naval")
+  replyTo   String?
+  /// Cópia oculta de tudo que sai, para a empresa ter o histórico.
+  bcc       String?
+
+  /// `true` envia sozinho ao receber o pedido; `false` espera aprovação no
+  /// painel. Nasce desligado de propósito — o disparo manual é a proteção
+  /// contra mandar material técnico a um concorrente sem querer.
+  autoSend Boolean @default(false)
+
+  /// Teto de envios automáticos por hora. Trava um laço de repetição ou um
+  /// robô preenchendo o formulário em série.
+  autoLimitPerHour Int @default(20)
+
+  updatedAt DateTime @updatedAt
+  updatedBy String?
+}
+
+/// Domínios que não recebem envio automático.
+///
+/// No modo automático, um pedido cujo e-mail casa com a lista não é enviado
+/// nem descartado: fica pendente no painel para alguém decidir. Bloquear de
+/// vez faria um cliente legítimo, barrado por engano, nunca receber nada.
+model BlockedDomain {
+  id String @id @default(cuid())
+  /// Domínio em minúsculas, sem arroba: "concorrente.com.br".
+  /// Casa com o domínio exato e com os subdomínios dele.
+  domain String @unique
+  /// Por que foi bloqueado; aparece no painel para quem for revisar depois.
+  reason String?
+
+  createdAt DateTime @default(now())
+  createdBy String?
+}
+
+/// Histórico de cada tentativa de envio.
+///
+/// Existe para responder "isso foi enviado? por quem? deu certo?" sem depender
+/// da memória de ninguém, e para que o modo automático possa ser auditado
+/// depois — é o registro que permite descobrir que algo saiu para quem não
+/// devia, e a partir de quando.
+model MailLog {
+  id        String  @id @default(cuid())
+  inquiryId String?
+  to        String
+  subject   String
+  /// enviado | falhou | bloqueado | pendente
+  status    String
+  /// Motivo da falha ou do bloqueio, quando houve.
+  detail    String?
+  /// "manual" (clique no painel) ou "automatico".
+  trigger   String  @default("manual")
+  /// E-mail de quem clicou, quando foi manual.
+  actor     String?
+
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([inquiryId])
+}

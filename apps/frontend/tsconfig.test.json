@@ -1,0 +1,6 @@
+{
+  "//": "Tipos dos testes. Herda a configuração do build e reabre `test/` e `audit/`, que o tsconfig principal exclui para não quebrar o build do Docker.",
+  "extends": "./tsconfig.json",
+  "include": ["test/**/*.ts", "audit/**/*.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

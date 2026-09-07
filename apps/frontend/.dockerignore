@@ -1,0 +1,21 @@
+# Reinstalado dentro da imagem; enviar daqui só torna o build lento.
+node_modules
+.next
+out
+
+# Credenciais: nunca entram na imagem. A conexão vem por variável de
+# ambiente do compose, em tempo de execução.
+.env
+.env.*
+
+# Ferramentas de auditoria e artefatos de trabalho, sem uso em produção.
+audit
+.dev.log
+.prod.log
+*.log
+
+# Controle de versão e editor
+.git
+.gitignore
+.vscode
+.idea

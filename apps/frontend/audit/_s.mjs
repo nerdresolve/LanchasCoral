@@ -1,0 +1,16 @@
+import { chromium } from '@playwright/test'
+const B='https://coral.nerdresolve.com'
+const b=await chromium.launch(); const p=await (await b.newContext({viewport:{width:1280,height:900}})).newPage()
+await p.goto(`${B}/modelos`,{waitUntil:'networkidle'})
+const ic=p.locator('button[aria-label*="Adicionar"]')
+await ic.first().click(); await ic.nth(2).click(); await p.waitForTimeout(400)
+await p.locator('button:has-text("Ver comparação")').click()
+await p.waitForTimeout(3000)
+await p.locator('button:has-text("Trocar")').first().click()
+await p.waitForTimeout(700)
+await p.screenshot({path:process.argv[2]+'/drop-1.png'})
+await p.locator('input').last().fill('33')
+await p.waitForTimeout(500)
+await p.screenshot({path:process.argv[2]+'/drop-2-busca.png'})
+console.log('ok')
+await b.close()

@@ -1,0 +1,284 @@
+@import "tailwindcss";
+
+/*
+ * Coral Design System.
+ * Source of truth: the CoralDesignSystem bundle shipped in
+ * "Coral Website (offline).html" (namespace CoralDesignSystem_57e1bd).
+ * Token names and values below are taken verbatim from that system.
+ */
+@theme {
+  /* ---------- Brand marks (sampled from the Coral logo) ---------- */
+  --color-mark-blue: #014D95;
+  --color-mark-yellow: #FCF403;
+  --color-mark-green: #01943B;
+
+  /* ---------- Base palette ---------- */
+  /* Azul-marinho profundo — base do sistema.
+     Derivado do #0F1224 da referência, com um leve desvio para o azul (B
+     acima de R e G) e menos saturação nos tons médios: o resultado é mais
+     sóbrio que um navy puro e não puxa para o roxo nos degradês. */
+  --color-navy-900: #080C18;
+  --color-navy-800: #0D1322;
+  --color-navy-700: #141C2F;
+  --color-navy-600: #1D2842;
+  --color-navy-500: #2A3757;
+
+  /* Grafite — neutro técnico para painéis no escuro, na mesma família. */
+  --color-graphite-900: #12142A;
+  --color-graphite-800: #191C34;
+  --color-graphite-700: #242848;
+
+  /* Ocean Blue — primary interactive blue */
+  --color-ocean-800: #054A70;
+  --color-ocean-700: #075B88;
+  --color-ocean-600: #0A6FA6;
+  --color-ocean-500: #0E86C4;
+  --color-ocean-200: #9FD1E8;
+  --color-ocean-100: #D6EAF5;
+
+  /* Aqua — energy, motion, wake */
+  --color-aqua-600: #0E9BB4;
+  --color-aqua-500: #16B8D4;
+  --color-aqua-400: #4ACBE1;
+  --color-aqua-200: #A9E7F1;
+  --color-aqua-100: #DCF5F9;
+
+  /* Pearl / neutrals — light surfaces */
+  --color-pearl-0: #FFFFFF;
+  --color-pearl-50: #F4F7F8;
+  --color-pearl-100: #E9EEF1;
+  --color-pearl-200: #D7DFE4;
+  --color-pearl-300: #B7C3CB;
+  --color-pearl-400: #8B9AA5;
+  --color-pearl-500: #647684;
+
+  /* Acento — azul do gradiente da versão de referência.
+     Claro (#6194CE) para o topo do degradê, escuro (#235E7A) para a base. */
+  --color-lime-500: #6194CE;
+  --color-lime-600: #235E7A;
+  --color-lime-100: #DCE7F4;
+
+  /* Semantic hues */
+  --color-success-500: #1FA463;
+  /* Tom de TEXTO para o verde: o #1FA463 sobre o proprio fundo tingido a 12%
+     da 2.85:1, ilegivel numa etiqueta de 12px. O vivo segue valendo para
+     fundo e borda, onde nao ha texto. */
+  --color-success-text: #136b40;
+  --color-warning-500: #E8A317;
+  /* Escurecido de #D8453B: aquele tom dava 4.04:1 sobre o fundo de campo,
+     abaixo do minimo 4.5. Vale tanto para o asterisco de campo obrigatorio
+     quanto para as mensagens de erro do formulario. */
+  --color-danger-500: #c13b32;
+  --color-info-500: #16B8D4;
+
+  /* Text */
+  --color-text-body: #2C3E4A;
+  /* Texto sobre superfícies escuras. Nomes sem o prefixo `text-` para que o
+     Tailwind gere as utilitárias `text-on-dark` e `text-on-dark-muted`. */
+  --color-on-dark: #E8EFF5;
+  --color-on-dark-muted: #9BB0BF;
+  --color-on-dark-soft: #C2D2DE;
+
+  /* ---------- Type ---------- */
+  --font-display: var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /*
+   * Escala display em razao ~1.28 (quarta menor), sem salto.
+   * Antes: hero 104 -> d2 44 era um pulo de 2,4x com nada no meio.
+   * Agora: 76 / 59 / 46 / 36 / 28 em desktop, encadeados.
+   */
+  --text-hero: clamp(2.75rem, 5.4vw, 4.75rem);
+  --text-d1: clamp(2.25rem, 4.1vw, 3.6875rem);
+  --text-d2: clamp(1.875rem, 3.1vw, 2.875rem);
+  --text-d3: clamp(1.5rem, 2.3vw, 2.25rem);
+  --text-h1: clamp(1.375rem, 1.8vw, 1.75rem);
+  --text-eyebrow: 0.6875rem;
+
+  /* Tracking — display type is tightened, eyebrows are widely spaced */
+  --tracking-hero: -0.03em;
+  --tracking-display: -0.02em;
+  --tracking-wide: 0.06em;
+  --tracking-eyebrow: 0.22em;
+  --tracking-mono: 0.04em;
+
+  /*
+   * Raios. A referência usa pílula (32px) nos botões e cantos suaves nos
+   * cartões; a escala abaixo reflete isso.
+   */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  /* Botões e pílulas de filtro seguem a referência: totalmente arredondados. */
+  --radius-pill: 999px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Shadows are cool-tinted (navy, never black) and low-spread */
+  --shadow-xs: 0 1px 2px rgba(8, 12, 24, 0.06);
+  --shadow-sm: 0 2px 6px rgba(8, 12, 24, 0.08);
+  --shadow-md: 0 10px 24px -8px rgba(8, 12, 24, 0.16);
+  --shadow-lg: 0 24px 56px -16px rgba(8, 12, 24, 0.24);
+  --shadow-hover: 0 18px 40px -12px rgba(8, 12, 24, 0.22);
+
+  /* Movement is water: it glides in and settles. Never bounces. */
+  --ease-glide: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Semantic aliases, kept as raw custom properties so component code reads
+     the same as the design system's own source. */
+  --surface-page: var(--color-pearl-50);
+  --surface-card: var(--color-pearl-0);
+  --surface-sunken: var(--color-pearl-100);
+  --surface-deep: var(--color-navy-900);
+  --surface-deep-raised: var(--color-navy-800);
+  --surface-technical: var(--color-graphite-900);
+
+  --text-strong: var(--color-navy-900);
+  /* Nao usa pearl-500 (#647684): sobre o fundo de campo (#F4F7F8) ele da
+     4.37:1, abaixo do minimo 4.5 de texto normal — e os rotulos de
+     formulario tem 11px. Este tom chega a 5.12:1 mantendo a hierarquia.
+     O pearl-500 segue valendo para bordas e icones, onde nao ha texto. */
+  --text-muted: #5a6b78;
+  --text-accent: var(--color-ocean-700);
+
+  --border-subtle: var(--color-pearl-200);
+  --border-strong: var(--color-pearl-300);
+  --border-on-dark: rgba(255, 255, 255, 0.14);
+  --border-on-dark-strong: rgba(255, 255, 255, 0.28);
+
+  --action-primary: var(--color-ocean-700);
+  --action-primary-hover: var(--color-ocean-600);
+  --action-signature: var(--color-lime-500);
+  --action-signature-press: var(--color-lime-600);
+
+  /* --- Gradientes de marca --- */
+  --wave-line: linear-gradient(90deg, transparent 0%, var(--color-aqua-500) 35%, var(--color-lime-500) 100%);
+  --wake-fade: linear-gradient(90deg, var(--color-aqua-500), rgba(22, 184, 212, 0));
+
+  /*
+   * Scrim do hero. O anterior escurecia a foto por igual, e quando um casco
+   * branco caia atras do titulo o contraste chegava a 1:1 (texto invisivel).
+   * Este e um "cortina" solida a esquerda que abre para a imagem a direita:
+   * a coluna de texto tem fundo garantido, independente da foto.
+   */
+  --scrim-hero: linear-gradient(100deg,
+    rgba(8, 12, 24, 0.92) 0%,
+    rgba(8, 12, 24, 0.88) 28%,
+    rgba(8, 12, 24, 0.68) 48%,
+    rgba(8, 12, 24, 0.34) 66%,
+    rgba(8, 12, 24, 0.21) 100%);
+  /* Reforco vertical: assenta o topo (nav) e a base (rail de numeros). */
+  --scrim-hero-v: linear-gradient(180deg,
+    rgba(8, 12, 24, 0.72) 0%,
+    rgba(8, 12, 24, 0) 26%,
+    rgba(8, 12, 24, 0) 62%,
+    rgba(8, 12, 24, 0.82) 100%);
+  --scrim-bottom: linear-gradient(180deg, rgba(8, 12, 24, 0) 0%, rgba(8, 12, 24, 0.9) 100%);
+
+  /* Superficies com profundidade — usadas em secoes escuras e cards. */
+  --grad-deep: radial-gradient(125% 105% at 15% 0%, #1D2842 0%, #0D1322 58%, #060911 100%);
+  --grad-technical: linear-gradient(165deg, #161E31 0%, #101725 55%, #090D17 100%);
+  --grad-card-sheen: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(244, 247, 248, 0) 42%);
+  /* Botao primario e acentos. */
+  --grad-signature: linear-gradient(90deg, #6194CE 0%, #235E7A 100%);
+  --grad-ocean: linear-gradient(90deg, #4C7FB8 0%, #1C4E66 100%);
+  --glow-signature: 0 10px 24px -12px rgba(8, 12, 24, 0.45);
+  --glow-aqua: 0 10px 24px -12px rgba(8, 12, 24, 0.4);
+
+  /* Glass — used on the header over hero media, and nowhere else by default */
+  --glass-blur: blur(14px) saturate(1.15);
+
+  /* Layout */
+  --layout-max: 1320px;
+  --layout-narrow: 820px;
+  --layout-gutter: clamp(20px, 5vw, 64px);
+  --section-y: clamp(72px, 9vw, 144px);
+  --header-h: 76px;
+
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-slow: 520ms;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--surface-page);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* The system's container: 1320px max with a fluid gutter. */
+.container-page {
+  width: 100%;
+  margin-inline: auto;
+  max-width: var(--layout-max);
+  padding-inline: var(--layout-gutter);
+}
+
+/* Vertical rhythm for a standard section. */
+.section-y { padding-block: var(--section-y); }
+
+/* Focus ring, aqua per the token set. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(22, 184, 212, 0.42);
+  border-radius: var(--radius-sm);
+}
+
+/*
+ * Rede de segurança para as animações de entrada: sem JavaScript o
+ * IntersectionObserver nunca dispara, então forçamos o estado final.
+ * O conteúdo já vem no HTML do servidor — isto só garante que ele seja
+ * visível para leitores e rastreadores sem JS.
+ */
+.no-js [data-reveal],
+.no-js [data-marco] > div {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Sem JS o fio da linha do tempo nunca se preenche; o traçado de fundo já
+   marca a sequência, então o preenchido some em vez de virar um risco solto. */
+.no-js ol > span[style] {
+  display: none;
+}
+
+/*
+ * O menu de "comparar com" a partir de `sm:`.
+ *
+ * Ele vive num portal no `body` — o cartão da lancha é `overflow-hidden` e
+ * recortaria um menu ancorado nele. Fora daquela árvore, não há a quem se
+ * ancorar: a posição vem medida em coordenadas de janela, nas variáveis que
+ * o componente escreve no `style`.
+ *
+ * No celular o menu é folha presa à base e ignora tudo isto.
+ */
+@media (min-width: 640px) {
+  [data-menu] {
+    top: var(--menu-topo);
+    bottom: var(--menu-base);
+    right: var(--menu-dir);
+    left: auto;
+    max-height: var(--menu-alt);
+  }
+}

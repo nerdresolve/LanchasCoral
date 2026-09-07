@@ -1,0 +1,121 @@
+# Pilha do site da Coral: banco, aplicação e túnel Cloudflare.
+#
+#   docker compose -f infra/docker-compose.yml up -d --build
+#
+# O túnel é a única porta de entrada pública: nem a aplicação nem o banco
+# expõem porta para fora do host. O `cloudflared` abre uma conexão de saída
+# até a borda da Cloudflare, então não é preciso abrir nada no firewall nem
+# ter IP fixo.
+#
+# Antes do primeiro `up`, rode `node infra/cloudflare-setup.mjs` para criar o
+# túnel, a rota e o DNS, e gerar `infra/.env.tunnel`.
+
+# O nome do projeto NÃO é declarado de propósito: o compose o deriva do
+# diretório (`infra`), e é assim que o volume do banco em uso se chama
+# (`infra_coral_pgdata`). Declarar `name: coral` criaria um volume novo e
+# vazio, deixando o site no ar sem barcos, anúncios nem artigos.
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: coral-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: coral
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-coral_dev_pw}
+      POSTGRES_DB: coral
+    ports:
+      # Continua exposto em 5433 para o desenvolvimento local (Prisma Studio,
+      # seeds, psql). Ligado só ao loopback: não fica acessível pela rede.
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - coral_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U coral -d coral"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - coral
+
+  app:
+    build:
+      context: ../apps/frontend
+      dockerfile: Dockerfile
+      # Seis rotas pré-renderizam conteúdo do banco (`generateStaticParams`),
+      # então o BUILD precisa alcançar o Postgres. `network: host` deixa o
+      # estágio de build enxergar a porta 5433 publicada no host — dentro da
+      # rede do compose o serviço `db` ainda não existe nesse momento.
+      network: host
+      args:
+        DATABASE_URL: postgresql://coral:${POSTGRES_PASSWORD:-coral_dev_pw}@127.0.0.1:5433/coral?schema=public
+        NEXT_PUBLIC_SITE_URL: https://coral.nerdresolve.com
+    image: coral-app:latest
+    container_name: coral-app
+    restart: unless-stopped
+    environment:
+      # `db` é o nome do serviço: dentro da rede do compose ele resolve para
+      # o contêiner do Postgres, e a porta é a interna (5432), não a 5433
+      # publicada no host.
+      DATABASE_URL: postgresql://coral:${POSTGRES_PASSWORD:-coral_dev_pw}@db:5432/coral?schema=public
+      NEXT_PUBLIC_SITE_URL: https://coral.nerdresolve.com
+      NODE_ENV: production
+      # As variáveis de SMTP NÃO são declaradas aqui de propósito: elas
+      # entram pelo `env_file` abaixo. Declará-las com `${SMTP_HOST:-}` faria
+      # o compose interpolar o valor do ambiente do HOST — vazio — e esse
+      # vazio venceria o que veio do arquivo.
+    # As variáveis de SMTP vêm do `.env` da RAIZ do projeto, e não deste
+    # diretório: o compose só carrega automaticamente o `.env` que está ao
+    # lado do arquivo (`infra/.env`), então sem esta linha os valores acima
+    # chegariam todos vazios e o envio ficaria desligado sem explicação.
+    # `required: false` mantém a subida funcionando em máquina sem o arquivo.
+    env_file:
+      - path: ../.env
+        required: false
+
+    depends_on:
+      db:
+        condition: service_healthy
+    # Sem `ports`: quem alcança a aplicação é o túnel, pela rede interna.
+    expose:
+      - "3000"
+    healthcheck:
+      # A imagem é alpine sem curl; o próprio Node resolve a checagem.
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      # A primeira renderização compila rotas dinâmicas; sem esta folga o
+      # contêiner seria marcado como doente antes de estar pronto.
+      start_period: 40s
+    networks:
+      - coral
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: coral-tunnel
+    restart: unless-stopped
+    # `--no-autoupdate`: numa imagem de contêiner a atualização automática
+    # reinicia o processo sem controle nenhum. Atualiza-se puxando a imagem.
+    command: tunnel --no-autoupdate run
+    # O token vem de .env.tunnel via env_file. Compose so carrega `.env`
+    # automaticamente, entao declarar aqui evita ter que passar
+    # `--env-file .env.tunnel` em toda invocacao.
+    env_file:
+      - .env.tunnel
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - coral
+
+volumes:
+  coral_pgdata:
+
+networks:
+  coral:
+    driver: bridge

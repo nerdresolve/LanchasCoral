@@ -1,0 +1,22 @@
+# Credenciais: NUNCA versionar.
+.env
+.env.*
+!.env.example
+infra/.env.tunnel
+
+# Cópias do banco: contêm dados pessoais dos clientes (nome, e-mail, telefone)
+# e o hash da senha do painel. Nunca versionar.
+infra/backups/
+
+# Dependências e artefatos de build
+node_modules/
+.next/
+out/
+dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Cópias antigas de configuração: ficam na máquina, não no repositório.
+*.bak-*
