@@ -75,7 +75,9 @@ export default function MobileNav({
         onClick={() => setOpen(true)}
         aria-expanded={open}
         aria-label={t.nav.openMenu}
-        className="-mr-2 flex h-9 w-9 items-center justify-center text-pearl-0"
+        /* 44px é o mínimo das WCAG para alvo de toque; eram 36. O `-mr-2.5`
+           puxa a folga para fora, então o ícone não se desloca no cabeçalho. */
+        className="-mr-2.5 flex h-11 w-11 items-center justify-center text-pearl-0"
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
           <path d="M3 6h18M3 12h18M3 18h18" />
@@ -98,7 +100,9 @@ export default function MobileNav({
                 type="button"
                 onClick={close}
                 aria-label={t.nav.closeMenu}
-                className="-mr-2 flex h-9 w-9 items-center justify-center text-pearl-0"
+                /* 44px é o mínimo das WCAG para alvo de toque; eram 36. O `-mr-2.5`
+           puxa a folga para fora, então o ícone não se desloca no cabeçalho. */
+        className="-mr-2.5 flex h-11 w-11 items-center justify-center text-pearl-0"
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
                   <path d="M6 6l12 12M18 6L6 18" />

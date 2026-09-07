@@ -54,7 +54,10 @@ const BTN_BASE =
 const BTN_SIZE = {
   sm: 'h-10 px-5 text-[11px]',
   md: 'h-12 px-7 text-xs',
-  lg: 'h-[58px] px-9 text-[13px]',
+  /* `px-6` até 380px: com os 36px fixos de `px-9`, "Explore nossos modelos"
+     precisava de 283px numa coluna de 280 e saía cortado no iPhone SE.
+     O texto não quebra (`whitespace-nowrap`), então quem cede é a folga. */
+  lg: 'h-[58px] px-6 text-[13px] min-[380px]:px-9',
 } as const
 
 /*

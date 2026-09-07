@@ -100,7 +100,9 @@ export default async function SiteFooter({ locale = 'pt' }: { locale?: Locale } 
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label={s.label}
-                className="flex h-9 w-9 items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-on-dark)] text-on-dark-muted transition-colors hover:border-aqua-500 hover:text-aqua-500"
+                /* 44px, o mínimo das WCAG para alvo de toque: eram 36, e três
+                   ícones lado a lado nesse tamanho erram fácil no dedo. */
+                className="flex h-11 w-11 items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-on-dark)] text-on-dark-muted transition-colors hover:border-aqua-500 hover:text-aqua-500"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d={s.path} />

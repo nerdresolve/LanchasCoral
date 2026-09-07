@@ -29,6 +29,7 @@ const SUITES = [
   ['_pentest', 'ataques: XSS, injeção, IDOR, vazamento'],
   ['_pentest3', 'abuso: duplo-clique, série, campos sem teto'],
   ['_teste-comparador', 'comparação entre modelos'],
+  ['_varredura', 'layout no celular: 20 rotas x 3 larguras'],
 ]
 
 function rodar(nome) {
