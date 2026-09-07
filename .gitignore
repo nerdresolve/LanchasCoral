@@ -23,3 +23,10 @@ Thumbs.db
 
 # Relatorio do Lighthouse: gerado a cada execucao, nao e fonte.
 apps/frontend/audit/_lh.json
+
+# Videos brutos baixados do Drive: pesados e regeraveis.
+infra/_videos-brutos/
+
+# Videos comprimidos do hero: gerados por infra/videos-do-drive.mjs.
+# Versionar binario de alguns MB por modelo incharia o repositorio.
+apps/frontend/public/videos/

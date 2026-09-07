@@ -43,6 +43,7 @@ export type BoatFormValues = {
   published: boolean
   order: number
   heroImage: string | null
+  heroVideo: string | null
   manualUrl: string | null
   seoTitle: string | null
   seoDescription: string | null
@@ -221,6 +222,14 @@ export default function BoatForm({ action, values: v, families, submitLabel }: P
             errors={err('heroImage')}
             hint="Deixe em branco para usar a primeira foto da galeria."
             placeholder="https://…"
+          />
+          <Field
+            label="Vídeo do hero"
+            name="heroVideo"
+            defaultValue={v.heroVideo}
+            errors={err('heroVideo')}
+            hint="Arquivo em /public/videos, por exemplo /videos/coral-40.mp4. A imagem de capa continua aparecendo — o vídeo entra por cima depois de carregado, e não aparece para quem pediu menos movimento ou está em conexão limitada."
+            placeholder="/videos/coral-40.mp4"
           />
           <Field
             label="Memorial descritivo (PDF)"

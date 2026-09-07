@@ -55,6 +55,11 @@ model Boat {
   order     Int     @default(0)
   heroImage String?
 
+  /// Vídeo de fundo do hero, servido de /public/videos.
+  /// Entra POR CIMA da heroImage, depois de carregado: a imagem continua
+  /// sendo o elemento LCP, então o vídeo não pesa na métrica.
+  heroVideo String?
+
   seoTitle       String?
   seoDescription String? @db.Text
 

@@ -95,6 +95,7 @@ function scalars(d: BoatInput) {
     published: d.published,
     order: d.order,
     heroImage: d.heroImage ?? d.images[0]?.url ?? null,
+    heroVideo: d.heroVideo ?? null,
     manualUrl: d.manualUrl ?? null,
     seoTitle: d.seoTitle ?? null,
     seoDescription: d.seoDescription ?? null,

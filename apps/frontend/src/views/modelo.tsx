@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
+import HeroVideo from '@/components/HeroVideo'
 import Link from 'next/link'
 import { getBoatBySlug, getSiblingBoats, boatLabel, localizeBoat, localizeEquipment } from '@/lib/queries'
 import { href, type Locale } from '@/i18n/config'
@@ -88,9 +89,13 @@ export default async function BoatView({ slug, locale }: { slug: string; locale:
 
       {/* ================= HERO ================= */}
       <section className="relative isolate -mt-[var(--header-h)] flex min-h-[560px] flex-col justify-end overflow-hidden bg-navy-900 pt-[var(--header-h)] lg:min-h-[min(78vh,720px)]">
+        {/* A imagem fica, e é ela que o Lighthouse mede como LCP. O vídeo
+            entra por cima só depois de carregado — e não entra em quem pediu
+            menos movimento ou está em conexão limitada. */}
         {heroImage && (
           <Image src={heroImage} alt={label} fill priority sizes="100vw" className="-z-30 object-cover" />
         )}
+        {boat.heroVideo && <HeroVideo src={boat.heroVideo} />}
         <div aria-hidden className="absolute inset-0 -z-20" style={{ background: 'var(--scrim-hero)' }} />
         <div aria-hidden className="absolute inset-0 -z-10" style={{ background: 'var(--scrim-hero-v)' }} />
 

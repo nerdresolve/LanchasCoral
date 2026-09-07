@@ -153,6 +153,33 @@ export function urlDeImagem() {
  * otimizador, então qualquer host https serve. O que se barra aqui é
  * `javascript:` e afins, que virariam link clicável na página pública.
  */
+/**
+ * Vídeo do hero: só arquivo servido pelo próprio site.
+ *
+ * Diferente das fotos, que aceitam hosts externos: vídeo de terceiro num
+ * elemento que toca sozinho no topo da página é risco desnecessário — e o
+ * Drive, que é de onde estes vêm, bloqueia por cota quando há muito acesso.
+ * Os arquivos vivem em /public/videos e viajam com o site.
+ */
+export function urlDeVideo() {
+  return z.preprocess(
+    (v) => (typeof v === 'string' && v.trim() === '' ? undefined : v),
+    z
+      .string()
+      .trim()
+      .max(300, 'Máximo de 300 caracteres.')
+      .refine((valor) => valor.startsWith('/videos/'), {
+        message: 'Use um caminho interno começando com /videos/ — por exemplo /videos/coral-40.mp4',
+      })
+      /* `..` sairia da pasta; o resto barra caractere estranho em nome de
+         arquivo, que não tem por que existir aqui. */
+      .refine((valor) => !valor.includes('..') && /^\/videos\/[a-zA-Z0-9._-]+\.(mp4|webm)$/.test(valor), {
+        message: 'O arquivo precisa terminar em .mp4 ou .webm, sem acento nem espaço no nome.',
+      })
+      .optional(),
+  )
+}
+
 export function urlDeDocumento() {
   return z.preprocess(
     (v) => (typeof v === 'string' && v.trim() === '' ? undefined : v),

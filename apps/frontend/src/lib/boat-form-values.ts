@@ -36,6 +36,7 @@ type BoatWithRelations = {
   published: boolean
   order: number
   heroImage: string | null
+  heroVideo: string | null
   manualUrl: string | null
   seoTitle: string | null
   seoDescription: string | null
@@ -73,6 +74,7 @@ export function toFormValues(b: BoatWithRelations): BoatFormValues {
     published: b.published,
     order: b.order,
     heroImage: b.heroImage,
+    heroVideo: b.heroVideo,
     manualUrl: b.manualUrl,
     seoTitle: b.seoTitle,
     seoDescription: b.seoDescription,
@@ -110,6 +112,7 @@ export const emptyFormValues: BoatFormValues = {
   published: true,
   order: 0,
   heroImage: null,
+  heroVideo: null,
   manualUrl: null,
   seoTitle: null,
   seoDescription: null,

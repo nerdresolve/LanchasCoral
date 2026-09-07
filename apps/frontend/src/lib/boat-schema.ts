@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { numeroOpcional, inteiroOpcional, textoOpcional, urlDeImagem, urlDeDocumento, slugValido } from './campos'
+import { numeroOpcional, inteiroOpcional, textoOpcional, urlDeImagem, urlDeDocumento, urlDeVideo, slugValido } from './campos'
 
 /*
  * Os ajudantes vivem em `./campos` porque o formulário dos seminovos precisa
@@ -44,6 +44,8 @@ export const boatSchema = z.object({
   // Validada como URL de imagem, e não como texto livre: vai direto para o
   // `next/image`, que responde 400 a qualquer host fora da lista.
   heroImage: urlDeImagem().optional().or(z.literal('').transform(() => undefined)),
+  /** Vídeo de fundo do hero, por cima da foto. */
+  heroVideo: urlDeVideo(),
   /** Memorial descritivo em PDF, oferecido para download na página do modelo. */
   manualUrl: urlDeDocumento(),
   seoTitle: optStr,
