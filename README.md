@@ -57,7 +57,7 @@ Está em produção em **[coral.nerdresolve.com](https://coral.nerdresolve.com)*
 Precisa de **Node 22+** e **Docker**.
 
 ```bash
-git clone https://github.com/mariathdev/coral.git
+git clone https://github.com/nerdresolve/coral.git
 cd coral
 cp .env.example .env      # e defina POSTGRES_PASSWORD
 docker compose -f infra/docker-compose.yml up -d --build
