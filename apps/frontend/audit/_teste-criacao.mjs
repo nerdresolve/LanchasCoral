@@ -85,8 +85,16 @@ try {
   conf((await p.inputValue('input[name="lengthM"]')) === '11.5', 'comprimento com vírgula gravou 11.5')
   conf((await p.inputValue('input[name="manualUrl"]')).includes('.pdf'), 'memorial gravou')
   conf((await p.inputValue('input[name="familyName"]')).includes('ZZ Familia'), 'família gravou')
-  const temFoto = await p.locator(`text=${FOTO}`).count()
-  conf(temFoto > 0, 'foto gravou na galeria')
+  /* Espera em vez de contar de imediato: com `domcontentloaded` a página
+     ainda está montando, e a galeria aparecia depois da checagem — o caso
+     falhava de forma intermitente sem nada estar quebrado. */
+  const temFoto = await p
+    .locator(`text=${FOTO}`)
+    .first()
+    .waitFor({ state: 'attached', timeout: 15000 })
+    .then(() => true)
+    .catch(() => false)
+  conf(temFoto, 'foto gravou na galeria')
 
   /*
    * Chegou ao site público?
