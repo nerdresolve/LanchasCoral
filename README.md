@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/brand/banner.webp" alt="Coral: o site de um estaleiro, do casco ao painel" width="100%">
+<img src="docs/brand/banner.webp" alt="Lanchas Coral: catálogo, comparador e painel de administração" width="100%">
 
 **Site institucional e painel de um estaleiro brasileiro.** Catálogo de 18
 modelos, comparador lado a lado, seminovos e um painel onde o cliente edita
@@ -36,7 +36,7 @@ tudo sozinho, sem tocar em código.
 
 ## O que é
 
-A **Coral Indústria Naval** fabrica lanchas de 16 a 50 pés desde 1990, em
+A **Lanchas Coral** fabrica embarcações de 16 a 50 pés desde 1990, em
 Duque de Caxias. O site anterior era WordPress: cada ficha de modelo tinha o
 memorial descritivo colado à mão, e mudar um telefone significava abrir sete
 páginas.
@@ -269,7 +269,7 @@ código pode ser lido, estudado e citado com atribuição, mas não há licença
 uso, cópia ou redistribuição. Detalhes em **[LICENSE.md](LICENSE.md)**.
 
 A identidade visual, as fotografias das embarcações, os memoriais e os textos
-institucionais pertencem à Coral Indústria Naval.
+institucionais pertencem à Lanchas Coral.
 
 ---
 

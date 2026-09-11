@@ -25,7 +25,7 @@ Não pode:
 
 ## Marca e conteúdo
 
-A identidade visual da **Coral Indústria Naval**, incluindo logo, fotografias
+A identidade visual da **Lanchas Coral** (Coral Indústria Naval), incluindo logo, fotografias
 das embarcações, memoriais descritivos e textos institucionais, pertence à
 titular da marca e **não** está coberta por nenhuma permissão acima. Esse
 material é do cliente, não da NerdResolve, e foi publicado aqui apenas no que
