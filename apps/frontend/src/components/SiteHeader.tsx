@@ -80,7 +80,7 @@ export default async function SiteHeader({
           prefetch={false}
           href={href('home', locale)}
           className="flex h-full shrink-0 items-center"
-          aria-label="Coral Indústria Naval"
+          aria-label="Lanchas Coral"
         >
           <Logo variant="white" height={26} priority />
         </Link>

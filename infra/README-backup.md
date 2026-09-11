@@ -16,7 +16,7 @@ Cada execução gera `infra/backups/coral_AAAA-MM-DD_HHMM.dump`, no formato
 custom do Postgres (comprimido, permite restaurar tabelas isoladas).
 
 O script **confere a cópia nova antes de apagar as antigas**. Se o arquivo sair
-ilegível, ele para, mantém tudo e avisa — nunca troca um backup bom por um ruim.
+ilegível, ele para, mantém tudo e avisa, sem nunca trocar um backup bom por um ruim.
 
 **Retenção:** as diárias ficam 14 dias; a primeira cópia de cada mês fica para
 sempre. Depois de 5 meses isso dá cerca de 21 arquivos, somando poucos MB.
@@ -43,7 +43,7 @@ Get-ScheduledTaskInfo -TaskName 'Coral - backup do banco'
 ## Restaurar
 
 > Restaurar SUBSTITUI o conteúdo atual. Antes de começar, faça uma cópia do
-> estado presente — mesmo que ele pareça estragado, pode conter algo que a
+> estado presente. Mesmo que ele pareça estragado, pode conter algo que a
 > cópia antiga não tem.
 
 ```sh
@@ -73,7 +73,7 @@ docker exec coral-db rm -f /tmp/r.dump
 ```
 
 No Git Bash, prefixe os `docker exec` que citam caminhos internos com
-`MSYS_NO_PATHCONV=1` — sem isso o shell converte `/tmp/r.dump` num caminho
+`MSYS_NO_PATHCONV=1`, porque sem isso o shell converte `/tmp/r.dump` num caminho
 Windows e o comando falha dizendo que não achou o arquivo.
 
 A senha é a `POSTGRES_PASSWORD` do `.env` da raiz (o padrão do compose, se não estiver
@@ -110,7 +110,7 @@ usuário do painel.
 ## A chave de criptografia
 
 A senha do servidor de e-mail fica **cifrada** na tabela `MailSettings`, e a
-chave que a abre (`CORAL_SECRET_KEY`) vive só no `.env` da raiz — nunca no
+chave que a abre (`CORAL_SECRET_KEY`) vive só no `.env` da raiz, nunca no
 banco. É o que impede que um dump vazado entregue a caixa de e-mail da empresa.
 
 A consequência prática: **restaurar um backup numa máquina sem essa chave
@@ -125,7 +125,7 @@ Trocá-la invalida o que já foi cifrado.
 - **As fotos.** Ficam em `lanchascoral.com.br`, `broker.lanchascoral.com.br` e
   `mariath.dev`. Se algum desses hosts sair do ar, o banco continua íntegro mas
   as imagens somem do site.
-- **Os PDFs dos memoriais**, servidos de `public/memoriais/` — versionados junto
+- **Os PDFs dos memoriais**, servidos de `public/memoriais/`, versionados junto
   do código.
 - **Os arquivos de segredo** (`.env`, `infra/.env.tunnel`). Guarde-os à parte,
   fora deste diretório.
@@ -134,4 +134,4 @@ Trocá-la invalida o que já foi cifrado.
 
 `infra/backups/` está no mesmo disco que o banco: um defeito de hardware leva os
 dois. Vale copiar a pasta periodicamente para outro lugar (nuvem, disco externo,
-outro servidor). Os arquivos são pequenos — poucos MB no total.
+outro servidor). Os arquivos são pequenos, poucos MB no total.

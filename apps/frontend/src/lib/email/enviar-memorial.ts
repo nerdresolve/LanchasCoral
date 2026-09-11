@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { prisma } from '../prisma'
 import { enviarEmail } from './mailer'
+import { COPIA_MEMORIAL } from './destinos'
 import { memorialDescritivo } from './templates'
 import {
   getConfigDeEnvio,
@@ -29,6 +30,25 @@ export type ResultadoEnvio =
   | { ok: false; erro: string; bloqueado?: boolean }
 
 /** Registra a tentativa. Nunca lança: um log que falha não pode derrubar o envio. */
+/**
+ * A falha é definitiva, ou vale tentar de novo?
+ *
+ * Códigos 5xx do SMTP e recusa de destinatário são permanentes: o mesmo
+ * endereço vai ser recusado outra vez. Queda de conexão, tempo esgotado e
+ * 4xx são transitórios.
+ *
+ * Na dúvida, trata como transitório: prender um pedido que poderia ser
+ * reenviado é pior do que deixar tentar de novo.
+ */
+function permanente(e: unknown): boolean {
+  const err = e as { responseCode?: number; code?: string; message?: string }
+  if (typeof err?.responseCode === 'number') return err.responseCode >= 500 && err.responseCode < 600
+  if (err?.code === 'EENVELOPE') return true
+  return /no such user|does not exist|invalid recipient|recipient rejected|mailbox unavailable/i.test(
+    err?.message ?? '',
+  )
+}
+
 async function registrar(dados: {
   inquiryId?: string
   to: string
@@ -206,7 +226,16 @@ export async function enviarMemorialPara(
   })
 
   try {
-    await enviarEmail({ para: pedido.email, assunto, html, texto, anexos })
+    /* Cópia para a assistência técnica: fica o registro de que material
+       saiu, para quem e quando, sem depender de alguém encaminhar. */
+    await enviarEmail({
+      para: pedido.email,
+      assunto,
+      html,
+      texto,
+      anexos,
+      copiaOculta: COPIA_MEMORIAL,
+    })
   } catch (e) {
     const motivo = e instanceof Error ? e.message : 'erro desconhecido'
     await registrar({
@@ -218,8 +247,29 @@ export async function enviarMemorialPara(
       trigger: opcoes.trigger,
       actor: opcoes.actor,
     })
-    // A reserva volta atrás: o envio falhou, então o operador precisa poder
-    // tentar de novo depois de resolver o problema.
+    /*
+     * A reserva só volta atrás quando vale a pena tentar de novo.
+     *
+     * Servidor fora do ar, rede caída, tempo esgotado: são transitórios, e o
+     * operador precisa poder reenviar depois de resolver. Endereço recusado
+     * pelo servidor é permanente, e clicar de novo produz a mesma recusa.
+     *
+     * A distinção importa porque a janela entre desfazer a reserva e o
+     * próximo clique é o que permitia dois envios: com endereço inválido, os
+     * três cliques falhavam, cada falha liberava a trava, e o seguinte
+     * passava. Mantendo a reserva no caso permanente, só o primeiro tenta.
+     */
+    if (permanente(e)) {
+      await prisma.inquiry.update({
+        where: { id: inquiryId },
+        data: { handled: true },
+      }).catch(() => {})
+      return {
+        ok: false,
+        erro: `O servidor recusou o endereço: ${motivo}. Corrija o e-mail do pedido antes de tentar de novo.`,
+      }
+    }
+
     await desfazerReserva()
     return { ok: false, erro: `Não foi possível enviar: ${motivo}` }
   }

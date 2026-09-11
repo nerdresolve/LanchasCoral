@@ -77,7 +77,7 @@ export default async function SiteFooter({ locale = 'pt' }: { locale?: Locale } 
 
       <div className="container-page grid gap-x-8 gap-y-12 pb-12 pt-20 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
         <div>
-          <Link prefetch={false} href={href('home', locale)} className="inline-flex min-h-11 items-center" aria-label="Coral Indústria Naval">
+          <Link prefetch={false} href={href('home', locale)} className="inline-flex min-h-11 items-center" aria-label="Lanchas Coral">
             <Logo variant="white" height={28} />
           </Link>
           <p className="mt-5 max-w-[300px] text-sm leading-[1.65] text-on-dark-muted">

@@ -21,7 +21,7 @@ const DICT = {
       home: 'Início',
     },
     home: {
-      eyebrow: 'Coral Indústria Naval · desde 1990',
+      eyebrow: 'Lanchas Coral · desde 1990',
       title1: 'Sua lancha',
       title2: 'do seu jeito.',
       lede: 'Fabricamos lanchas de 16 a 50 pés desde 1990. Cada casco sai do estaleiro na configuração que o proprietário escolheu.',
@@ -209,7 +209,7 @@ const DICT = {
       fly: 'Flybridge',
       blurb:
         'Estaleiro 100% brasileiro desde 1990. Mais de 3.000 embarcações entregues, de 16 a 50 pés.',
-      rights: 'Coral Indústria Naval',
+      rights: 'Lanchas Coral',
     },
     broker: {
       eyebrow: 'Coral Broker',
@@ -316,7 +316,7 @@ const DICT = {
       home: 'Home',
     },
     home: {
-      eyebrow: 'Coral Indústria Naval · since 1990',
+      eyebrow: 'Lanchas Coral · since 1990',
       title1: 'Your boat,',
       title2: 'your way.',
       lede: 'Building boats from 16 to 50 feet since 1990. Every hull leaves the yard in the configuration its owner specified.',
@@ -502,7 +502,7 @@ const DICT = {
       fly: 'Flybridge',
       blurb:
         'A 100% Brazilian shipyard since 1990. Over 3,000 boats delivered, from 16 to 50 feet.',
-      rights: 'Coral Indústria Naval',
+      rights: 'Lanchas Coral',
     },
     broker: {
       eyebrow: 'Coral Broker',

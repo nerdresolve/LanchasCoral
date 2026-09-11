@@ -13,7 +13,6 @@
 
 export const COMPANY = {
   name: 'Lanchas Coral',
-  legalName: 'Coral Indústria Naval',
   foundedYear: 1990,
   city: 'Duque de Caxias',
   state: 'RJ',

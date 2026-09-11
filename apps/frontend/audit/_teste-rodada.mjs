@@ -94,8 +94,15 @@ try {
   await p.waitForURL(/\/admin$/, { timeout: 30000 })
 
   await p.goto(`${BASE}/admin/contatos`, { waitUntil: 'domcontentloaded' })
-  const formularios = await p.locator('form:has(input[name="key"])').count()
-  conf(formularios === 3, 'os três pontos focais aparecem', `${formularios}`)
+  /* Confere quais setores existem, e não quantos: o número muda quando o
+     cliente organiza o atendimento (o RH entrou depois dos três primeiros),
+     e um teste preso à contagem quebra sem nada estar errado. */
+  const chaves = await p
+    .locator('form input[name="key"]')
+    .evaluateAll((els) => els.map((e) => e.value).sort())
+  for (const setor of ['assistencia', 'comercial', 'compras', 'dp']) {
+    conf(chaves.includes(setor), `o ponto focal "${setor}" aparece`, chaves.join(', '))
+  }
 
   const antes = await prisma.contactPoint.findUnique({ where: { key: 'comercial' } })
   const NOVO = '(21) 3448-0001'

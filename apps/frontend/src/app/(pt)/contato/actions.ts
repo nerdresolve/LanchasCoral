@@ -24,6 +24,16 @@ export type ContactState = {
   message?: string
 }
 
+/** O assunto do aviso interno, por formulário de origem. */
+const TITULO_POR_TIPO: Record<string, string> = {
+  CONTATO: 'Contato pelo site',
+  PROPOSTA: 'Pedido de proposta',
+  MANUAL: 'Pedido de memorial descritivo',
+  SERVICOS: 'Assistência técnica',
+  TRABALHE: 'Trabalhe conosco',
+  ANUNCIAR: 'Seja nosso fornecedor',
+}
+
 export async function submitInquiry(
   _prev: ContactState,
   fd: FormData,
@@ -107,6 +117,42 @@ export async function submitInquiry(
     } catch {
       // Fica pendente no painel.
     }
+  }
+
+  /*
+   * Aviso ao setor responsável.
+   *
+   * Cada formulário vai para uma caixa diferente, então quem lê já é quem
+   * resolve. Antes a solicitação só ficava no painel, e alguém precisava
+   * lembrar de olhar.
+   *
+   * Falha aqui não vira erro para o visitante: a mensagem já está gravada, e
+   * o pedido continua no painel. Avisar é conveniência, não a garantia.
+   */
+  try {
+    const [{ enviarEmail }, { avisoDeFormulario }, { destinoDe }] = await Promise.all([
+      import('@/lib/email/mailer'),
+      import('@/lib/email/templates'),
+      import('@/lib/email/destinos'),
+    ])
+    const { assunto, html, texto } = avisoDeFormulario({
+      titulo: TITULO_POR_TIPO[data.kind] ?? 'Contato pelo site',
+      nome: data.name,
+      email: data.email,
+      telefone: data.phone,
+      mensagem: data.message,
+      modelo: data.boatSlug,
+    })
+    await enviarEmail({
+      para: destinoDe(data.kind),
+      assunto,
+      html,
+      texto,
+      // Responder fala com quem escreveu, sem copiar o endereço à mão.
+      responderPara: data.email,
+    })
+  } catch {
+    // A solicitação está gravada e aparece no painel de qualquer forma.
   }
 
   return { ok: true, message: 'Recebemos seu contato. Nossa equipe responde em breve.' }

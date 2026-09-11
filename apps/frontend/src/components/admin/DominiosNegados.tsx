@@ -21,7 +21,11 @@ export type DominioNegado = {
 export default function DominiosNegados({ itens }: { itens: DominioNegado[] }) {
   const [estado, formAction, pendente] = useActionState<MailState, FormData>(bloquearDominio, undefined)
 
-  const fmt = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short' })
+  // Fuso fixo: sem ele, servidor e navegador podem render datas diferentes.
+  const fmt = new Intl.DateTimeFormat('pt-BR', {
+    dateStyle: 'short',
+    timeZone: 'America/Sao_Paulo',
+  })
 
   return (
     <section className="rounded-[var(--radius-lg)] border border-[var(--border-subtle)] bg-[var(--surface-card)] p-6 shadow-[var(--shadow-sm)]">

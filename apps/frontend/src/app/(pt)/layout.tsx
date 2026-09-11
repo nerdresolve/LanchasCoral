@@ -8,15 +8,15 @@ import { Shell } from '../_shell'
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lanchascoral.com.br'),
   title: {
-    default: 'Coral Indústria Naval',
-    template: '%s | Coral Indústria Naval',
+    default: 'Lanchas Coral',
+    template: '%s | Lanchas Coral',
   },
   description:
     'Estaleiro brasileiro desde 1990. Lanchas de 16 a 50 pés, com casco monobloco Wood Free e 10 anos de garantia estrutural.',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    siteName: 'Coral Indústria Naval',
+    siteName: 'Lanchas Coral',
     // Imagem padrão: sem ela, toda página sem foto própria era compartilhada
     // sem preview nenhum.
     images: [

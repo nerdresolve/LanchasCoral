@@ -136,7 +136,7 @@ export default function ConfigEmailForm({ valores: v }: { valores: ConfigValores
             name="fromName"
             defaultValue={v.fromName}
             required
-            placeholder="Coral Indústria Naval"
+            placeholder="Lanchas Coral"
           />
           <Field
             label="E-mail do remetente"

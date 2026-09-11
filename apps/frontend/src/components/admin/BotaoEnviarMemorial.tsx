@@ -73,7 +73,12 @@ export default function BotaoEnviarMemorial({
 
         {jaEnviadoEm && !estado?.ok && (
           <span className="text-xs text-[var(--text-muted)]">
-            Enviado em {new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' }).format(jaEnviadoEm)}
+            Enviado em {new Intl.DateTimeFormat('pt-BR', {
+              dateStyle: 'short',
+              timeStyle: 'short',
+              // Sem fuso fixo, servidor e navegador divergem na hidratação.
+              timeZone: 'America/Sao_Paulo',
+            }).format(jaEnviadoEm)}
           </span>
         )}
         {desabilitadoPorque && (

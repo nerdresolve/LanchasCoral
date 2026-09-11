@@ -22,9 +22,9 @@ liberada e PTR proprio (Hetzner resolve por ~4 EUR/mes).
 
 Recebimento pelo Cloudflare Email Routing, de graca, sem servidor:
 
-    contact@nerdresolve.com  ->  <caixa em EMAIL_DESTINO>
+    contact@nerdresolve.com  ->  <caixa definida em EMAIL_DESTINO>
 
-Registros criados na zona (id <id em CLOUDFLARE_ZONA>):
+Registros criados na zona (id em CLOUDFLARE_ZONA):
 
 | Tipo | Nome                    | Conteudo                                  |
 |------|-------------------------|-------------------------------------------|
@@ -43,7 +43,7 @@ webmail proprio para apontar.
 
 ## Passo que falta (so voce pode fazer)
 
-A Cloudflare mandou um e-mail de verificacao para <caixa em EMAIL_DESTINO>.
+A Cloudflare manda um e-mail de verificacao para a caixa de destino.
 Enquanto o link nao for clicado, a regra de encaminhamento nao pode ser criada
 (a API recusa com o codigo 2054).
 

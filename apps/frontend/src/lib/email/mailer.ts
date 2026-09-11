@@ -47,6 +47,8 @@ type Envio = {
   html: string
   texto: string
   responderPara?: string
+  /** Cópia oculta deste envio, somada ao `bcc` global da configuração. */
+  copiaOculta?: string
   /* `cid` + `contentDisposition: 'inline'` para imagens que aparecem no corpo
      (o logotipo do cabeçalho); os demais anexos, como o PDF, dispensam. */
   anexos?: {
@@ -58,7 +60,15 @@ type Envio = {
   }[]
 }
 
-export async function enviarEmail({ para, assunto, html, texto, responderPara, anexos = [] }: Envio) {
+export async function enviarEmail({
+  para,
+  assunto,
+  html,
+  texto,
+  responderPara,
+  copiaOculta,
+  anexos = [],
+}: Envio) {
   const cfg = await getConfigDeEnvio()
   if (!podeEnviar(cfg)) throw new Error('O envio de e-mail ainda não foi configurado.')
 
@@ -67,7 +77,10 @@ export async function enviarEmail({ para, assunto, html, texto, responderPara, a
   return montar(cfg).sendMail({
     from: `"${cfg.fromName}" <${remetente}>`,
     to: para,
-    bcc: cfg.bcc || undefined,
+    /* O `bcc` da configuração vale para tudo; `copiaOculta` é de um envio
+       só, como a cópia do memorial para a assistência técnica. Os dois
+       convivem, sem repetir endereço. */
+    bcc: [...new Set([cfg.bcc, copiaOculta].filter(Boolean))].join(', ') || undefined,
     replyTo: responderPara ?? cfg.replyTo ?? remetente,
     subject: assunto,
     text: texto,

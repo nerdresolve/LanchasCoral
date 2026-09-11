@@ -9,7 +9,13 @@ import { criptoConfigurado } from '@/lib/cripto'
 
 export const dynamic = 'force-dynamic'
 
-const fmt = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' })
+/* `timeZone` explícito: sem ele o servidor formata em UTC e o navegador no
+   fuso local, os textos divergem e o React acusa erro de hidratação. */
+const fmt = new Intl.DateTimeFormat('pt-BR', {
+  dateStyle: 'short',
+  timeStyle: 'short',
+  timeZone: 'America/Sao_Paulo',
+})
 
 /** Rótulos de cada situação do histórico. */
 const SITUACAO: Record<string, { texto: string; cor: string }> = {

@@ -36,7 +36,7 @@ export function Logo({
   return (
     <Image
       src={white ? '/brand/logo-coral-mono.png' : '/brand/logo-coral.png'}
-      alt="Coral Indústria Naval"
+      alt="Lanchas Coral"
       width={width}
       height={height}
       priority={priority}

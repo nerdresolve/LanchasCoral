@@ -51,7 +51,7 @@ export function escapeHtml(valor: string): string {
  */
 function cabecalho(comLogo: boolean): string {
   const marca = comLogo
-    ? `<img src="cid:${CID_LOGO}" width="180" height="43" alt="Coral Indústria Naval"
+    ? `<img src="cid:${CID_LOGO}" width="180" height="43" alt="Lanchas Coral"
             style="display:block;border:0;outline:none;text-decoration:none;width:180px;height:auto;" />`
     : `<span style="font-family:${FONT};font-size:27px;line-height:1;font-weight:bold;color:#FFFFFF;letter-spacing:3px;">CORAL</span>
        <br />
@@ -73,7 +73,7 @@ function rodape(): string {
   <tr>
     <td align="center" style="padding:18px 24px;background-color:${PAPER};border-top:1px solid ${BORDER};">
       <span style="font-family:${FONT};font-size:12px;line-height:1.6;color:${MUTED};">
-        Coral Indústria Naval &ndash; Duque de Caxias, RJ<br />
+        Lanchas Coral &ndash; Duque de Caxias, RJ<br />
         <a href="https://lanchascoral.com.br" style="color:${OCEAN_700};text-decoration:none;">lanchascoral.com.br</a>
       </span>
     </td>
@@ -88,7 +88,7 @@ export function envolver(corpoHtml: string, preheader = '', comLogo = true): str
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="x-apple-disable-message-reformatting" />
-<title>Coral Indústria Naval</title>
+<title>Lanchas Coral</title>
 </head>
 <body style="margin:0;padding:0;background-color:${PAPER};">
   <!-- Preheader: primeira linha na caixa de entrada, invisível ao abrir. -->
@@ -176,7 +176,7 @@ export function assinatura(telefones: string[]): string {
   return `
   ${p('Atenciosamente,', `margin-bottom:4px;color:${MUTED};`)}
   <p style="margin:0 0 2px;font-family:${FONT};font-size:15px;line-height:1.5;font-weight:bold;color:${NAVY_900};">Equipe Coral</p>
-  <p style="margin:0 0 12px;font-family:${FONT};font-size:15px;line-height:1.5;font-weight:bold;color:${NAVY_900};">Coral Indústria Naval</p>
+  <p style="margin:0 0 12px;font-family:${FONT};font-size:15px;line-height:1.5;font-weight:bold;color:${NAVY_900};">Lanchas Coral</p>
   <p style="margin:0;font-family:${FONT};font-size:14px;line-height:1.9;color:${TEXT};">
     ${linhas}
     <br />

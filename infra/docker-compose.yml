@@ -22,7 +22,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_USER: coral
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-coral_dev_pw}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?defina POSTGRES_PASSWORD no .env}
       POSTGRES_DB: coral
     ports:
       # Continua exposto em 5433 para o desenvolvimento local (Prisma Studio,
@@ -48,7 +48,7 @@ services:
       # rede do compose o serviço `db` ainda não existe nesse momento.
       network: host
       args:
-        DATABASE_URL: postgresql://coral:${POSTGRES_PASSWORD:-coral_dev_pw}@127.0.0.1:5433/coral?schema=public
+        DATABASE_URL: postgresql://coral:${POSTGRES_PASSWORD:?defina POSTGRES_PASSWORD no .env}@127.0.0.1:5433/coral?schema=public
         NEXT_PUBLIC_SITE_URL: https://coral.nerdresolve.com
     image: coral-app:latest
     container_name: coral-app
@@ -57,7 +57,7 @@ services:
       # `db` é o nome do serviço: dentro da rede do compose ele resolve para
       # o contêiner do Postgres, e a porta é a interna (5432), não a 5433
       # publicada no host.
-      DATABASE_URL: postgresql://coral:${POSTGRES_PASSWORD:-coral_dev_pw}@db:5432/coral?schema=public
+      DATABASE_URL: postgresql://coral:${POSTGRES_PASSWORD:?defina POSTGRES_PASSWORD no .env}@db:5432/coral?schema=public
       NEXT_PUBLIC_SITE_URL: https://coral.nerdresolve.com
       NODE_ENV: production
       # As variáveis de SMTP NÃO são declaradas aqui de propósito: elas

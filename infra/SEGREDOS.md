@@ -5,16 +5,16 @@ chaves vivem só no `.env` da raiz e em `infra/.env.tunnel`, que não entram nas
 cópias e não vão para o Git.
 
 Copie os valores do seu `.env` para um gerenciador de senhas ou cofre. Este
-arquivo é só o roteiro — de propósito, ele não contém nenhum valor.
+arquivo é só o roteiro. De propósito, ele não contém nenhum valor.
 
-## 1. `CORAL_SECRET_KEY` — a mais importante
+## 1. `CORAL_SECRET_KEY`, a mais importante
 
 Cifra a senha do servidor de e-mail guardada na tabela `MailSettings`.
 
 **Sem ela:** o backup restaura o site inteiro, mas o envio de e-mail fica mudo
 e a senha precisa ser digitada de novo em `/admin/email`. Nada mais se perde.
 
-**Trocá-la** invalida o que já foi cifrado — a senha do e-mail teria de ser
+**Trocá-la** invalida o que já foi cifrado, e a senha do e-mail teria de ser
 redigitada.
 
 Para gerar uma nova, se um dia for preciso:
@@ -29,7 +29,7 @@ Senha do banco. Sem ela não dá para restaurar um dump nem abrir o `psql`.
 
 > **Pendência conhecida:** hoje a variável NÃO está no `.env`, então vale o
 > padrão embutido no compose. O banco só escuta em 127.0.0.1, então não
-> está exposto à rede — mas convém definir uma senha própria antes de entregar
+> está exposto à rede, mas convém definir uma senha própria antes de entregar
 > ao cliente. Para trocar: `ALTER USER coral WITH PASSWORD '...'` no Postgres,
 > e depois atualizar o `.env`.
 
@@ -43,7 +43,7 @@ Senha do banco. Sem ela não dá para restaurar um dump nem abrir o `psql`.
 
 ## 4. Acesso ao painel
 
-`https://coral.nerdresolve.com/admin/login` — usuário `admin@lanchascoral.com.br`.
+`https://coral.nerdresolve.com/admin/login`, usuário `admin@lanchascoral.com.br`.
 
 > **Pendência conhecida:** a senha é a padrão desde 22/08/2026 e já circulou em
 > texto plano. Trocar com:

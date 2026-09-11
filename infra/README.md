@@ -15,8 +15,8 @@ saída** até a borda da Cloudflare. Não é preciso IP fixo.
 | Serviço | Imagem | Exposição |
 |---|---|---|
 | `db` | postgres:16-alpine | `127.0.0.1:5433` (só local, para Prisma Studio e seeds) |
-| `app` | build de `apps/frontend` | nenhuma — só a rede interna |
-| `tunnel` | cloudflare/cloudflared | nenhuma — conexão de saída |
+| `app` | build de `apps/frontend` | nenhuma, só a rede interna |
+| `tunnel` | cloudflare/cloudflared | nenhuma, conexão de saída |
 
 ## Subir
 

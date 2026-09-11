@@ -44,7 +44,7 @@ export async function getMailSettings() {
       // A senha do ambiente NÃO é copiada para o banco: quem quiser guardá-la
       // ali digita no painel, e aí ela entra cifrada.
       fromEmail: process.env.MAIL_FROM || null,
-      fromName: process.env.MAIL_FROM_NAME || 'Coral Indústria Naval',
+      fromName: process.env.MAIL_FROM_NAME || 'Lanchas Coral',
       bcc: process.env.MAIL_BCC || null,
     },
   })

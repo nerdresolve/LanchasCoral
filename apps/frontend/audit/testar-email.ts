@@ -68,7 +68,7 @@ async function main() {
   })
 
   const info = await transporte.sendMail({
-    from: `"${process.env.MAIL_FROM_NAME ?? 'Coral Indústria Naval'}" <${process.env.MAIL_FROM ?? process.env.SMTP_USER}>`,
+    from: `"${process.env.MAIL_FROM_NAME ?? 'Lanchas Coral'}" <${process.env.MAIL_FROM ?? process.env.SMTP_USER}>`,
     to: destino,
     subject: `[teste] ${assunto}`,
     text: texto,

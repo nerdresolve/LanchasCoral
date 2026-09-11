@@ -31,10 +31,10 @@ O primeiro comando só mostra o que há na pasta, com os tamanhos. O segundo
 baixa, comprime e deixa tudo em `apps/frontend/public/videos/`, imprimindo no
 fim o caminho de cada arquivo.
 
-A compressão mira **2–4 MB por vídeo**: 1280px de largura, 10 segundos, sem
-áudio. Vídeo de câmera chega com 50–200 MB, e no hero isso é desperdício — o
-elemento tem ~720px de altura, toca em laço mudo e ninguém assiste. É textura
-de fundo.
+A compressão mira **2 a 4 MB por vídeo**: 1280px de largura, 10 segundos, sem
+áudio. Vídeo de câmera chega com 50 a 200 MB, e no hero isso é desperdício: o
+elemento tem cerca de 720px de altura, toca em laço mudo e ninguém assiste. É
+textura de fundo.
 
 ## Associar cada vídeo à sua lancha
 
@@ -69,7 +69,7 @@ do build (`COPY . .`), então o deploy os leva normalmente.
 
 A consequência: **quem clonar o projeto em outra máquina não terá os
 vídeos** e precisa rodar o script acima antes de construir a imagem. Sem
-eles, o hero simplesmente usa a foto — nada quebra.
+eles, o hero simplesmente usa a foto, sem quebrar nada.
 
 Os arquivos brutos baixados ficam em `infra/_videos-brutos/`, também fora do
 Git. Pode apagar depois de conferir o resultado.

@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
-# Cria a regra contact@nerdresolve.com -> Gmail assim que o endereco de
-# destino estiver verificado. Rode depois de clicar no link que a Cloudflare
-# mandou para <caixa em EMAIL_DESTINO>.
+# Cria a regra contact@nerdresolve.com -> caixa de destino assim que o
+# endereco estiver verificado. Rode depois de clicar no link que a Cloudflare
+# manda para a caixa configurada em EMAIL_DESTINO.
+#
+# Nada de identificador embutido: o repositorio e publico, e ID de zona e de
+# conta sao dados da infraestrutura.
 set -euo pipefail
 
-Z=<id em CLOUDFLARE_ZONA>
-A=<id em CLOUDFLARE_ID>
-T="${CLOUDFLARE_API:?defina CLOUDFLARE_API (veja coral/.env)}"
-DEST=<caixa em EMAIL_DESTINO>
+Z="${CLOUDFLARE_ZONA:?defina CLOUDFLARE_ZONA (veja .env.example)}"
+A="${CLOUDFLARE_ID:?defina CLOUDFLARE_ID (veja .env.example)}"
+T="${CLOUDFLARE_API:?defina CLOUDFLARE_API (veja .env.example)}"
+DEST="${EMAIL_DESTINO:?defina EMAIL_DESTINO: a caixa que recebe os e-mails}"
 
 status=$(curl -s "https://api.cloudflare.com/client/v4/accounts/$A/email/routing/addresses" \
   -H "Authorization: Bearer $T" \

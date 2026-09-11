@@ -310,7 +310,7 @@ model MailSettings {
 
   // --- Identidade do remetente ---
   fromEmail String?
-  fromName  String  @default("Coral Indústria Naval")
+  fromName  String  @default("Lanchas Coral")
   replyTo   String?
   /// Cópia oculta de tudo que sai, para a empresa ter o histórico.
   bcc       String?
