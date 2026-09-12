@@ -1,71 +1,72 @@
 <div align="center">
 
-<img src="docs/brand/banner.webp" alt="Lanchas Coral: catálogo, comparador e painel de administração" width="100%">
+<img src="docs/brand/banner.webp" alt="Lanchas Coral: catalog, comparison tool and admin dashboard" width="100%">
 
-**Site institucional e painel de um estaleiro brasileiro.** Catálogo de 18
-modelos, comparador lado a lado, seminovos e um painel onde o cliente edita
-tudo sozinho, sem tocar em código.
+**Institutional website and dashboard for a Brazilian boatyard.** A catalog of
+18 models, a side-by-side comparison tool, pre-owned listings and a dashboard
+where the client edits everything alone, without touching code.
 
-[![Licença](https://img.shields.io/badge/licença-todos%20os%20direitos%20reservados-0E4C6B)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-all%20rights%20reserved-0E4C6B)](LICENSE.md)
 [![Next.js](https://img.shields.io/badge/Next.js-16.3-0E4C6B)](https://nextjs.org)
-[![Testes](https://img.shields.io/badge/testes-181%20unitários%20%2B%20249%20e2e-0E4C6B)](#qualidade)
-[![Acessibilidade](https://img.shields.io/badge/Lighthouse%20a11y-100-0E4C6B)](#qualidade)
+[![Tests](https://img.shields.io/badge/tests-181%20unit%20%2B%20249%20e2e-0E4C6B)](#quality)
+[![Accessibility](https://img.shields.io/badge/Lighthouse%20a11y-100-0E4C6B)](#quality)
 
-**[Ver no ar](https://coral.nerdresolve.com)**
+**[See it live](https://coral.nerdresolve.com)**
 
-<img src="docs/capturas/home.webp" alt="Home: lancha em navegação, com os números do estaleiro sobre a foto" width="100%">
+<img src="docs/capturas/home.webp" alt="Home: a boat under way, with the boatyard's numbers over the photo" width="100%">
 
 </div>
 
 ---
 
-## Índice
+## Contents
 
-- [O que é](#o-que-é)
-- [Subir em 5 minutos](#subir-em-5-minutos)
-- [Comparador](#comparador)
-- [O painel](#o-painel)
-- [Arquitetura](#arquitetura)
-- [Desempenho](#desempenho)
-- [Qualidade](#qualidade)
-- [Segurança](#segurança)
-- [Referência de comandos](#referência-de-comandos)
-- [Licença](#licença)
-
----
-
-## O que é
-
-A **Lanchas Coral** fabrica embarcações de 16 a 50 pés desde 1990, em
-Duque de Caxias. O site anterior era WordPress: cada ficha de modelo tinha o
-memorial descritivo colado à mão, e mudar um telefone significava abrir sete
-páginas.
-
-Este é o substituto. O conteúdo real, **18 modelos, 14 seminovos, 836 fotos e
-365 itens de equipamento**, foi migrado para um banco, e o cliente passou a
-editar tudo por um painel. Trocar um ponto de contato agora é um campo, e ele
-muda em todas as páginas de uma vez.
-
-Está em produção em **[coral.nerdresolve.com](https://coral.nerdresolve.com)**.
-
-<img src="docs/capturas/modelos.webp" alt="Catálogo: cartões dos modelos agrupados por família de casco" width="100%">
+- [What it is](#what-it-is)
+- [Up in 5 minutes](#up-in-5-minutes)
+- [Comparison tool](#comparison-tool)
+- [The dashboard](#the-dashboard)
+- [Architecture](#architecture)
+- [Performance](#performance)
+- [Quality](#quality)
+- [Security](#security)
+- [Command reference](#command-reference)
+- [License](#license)
 
 ---
 
-## Subir em 5 minutos
+## What it is
 
-Requer **Node 22+** e **Docker**.
+**Lanchas Coral** has been building 16 to 50 foot boats since 1990, in Duque
+de Caxias. The previous site was WordPress: every model sheet had its spec
+sheet (*memorial descritivo*) pasted in by hand, and changing a phone number
+meant opening seven pages.
+
+This is the replacement. The real content, **18 models, 14 pre-owned boats,
+836 photos and 365 equipment items**, was migrated into a database, and the
+client now edits all of it through a dashboard. Changing a contact point is
+one field now, and it changes on every page at once.
+
+It is in production at **[coral.nerdresolve.com](https://coral.nerdresolve.com)**.
+
+<img src="docs/capturas/modelos.webp" alt="Catalog: model cards grouped by hull family" width="100%">
+
+---
+
+## Up in 5 minutes
+
+Requires **Node 22+** and **Docker**.
 
 ```bash
 git clone https://github.com/nerdresolve/coral.git
 cd coral
-cp .env.example .env      # e defina POSTGRES_PASSWORD
+cp .env.example .env      # and set POSTGRES_PASSWORD
 docker compose -f infra/docker-compose.yml up -d --build
 ```
 
-O site sobe em `http://localhost:3000` e o banco em `127.0.0.1:5433`.
+The site comes up on `http://localhost:3000` and the database on
+`127.0.0.1:5433`.
 
-Para desenvolver com recarga automática:
+To develop with hot reload:
 
 ```bash
 cd apps/frontend
@@ -74,208 +75,208 @@ npx prisma migrate deploy
 npm run dev
 ```
 
-> **O conteúdo não vem junto.** As fotos, os memoriais em PDF e os textos
-> pertencem à Coral e não estão no repositório. Subindo do zero você tem a
-> estrutura funcionando com o banco vazio. Crie um modelo pelo painel para ver
-> o fluxo completo.
+> **The content does not ship with it.** The photos, the PDF spec sheets and
+> the copy belong to Coral and are not in the repository. Starting from
+> scratch you get the structure working against an empty database. Create a
+> model through the dashboard to see the full flow.
 
 ---
 
-## Comparador
+## Comparison tool
 
-Duas versões do mesmo casco diferem em cinco linhas de dezoito. Descobrir
-quais exigia abrir duas abas e alternar entre elas.
+Two versions of the same hull differ in five rows out of eighteen. Finding out
+which ones meant opening two tabs and flipping between them.
 
-<img src="docs/capturas/comparador.webp" alt="Comparação entre Coral 36 Aberta e Cabinada, com fotos, descrições e dimensões lado a lado" width="100%">
+<img src="docs/capturas/comparador.webp" alt="Comparison between the Coral 36 Aberta and Cabinada, with photos, descriptions and dimensions side by side" width="100%">
 
-O ícone de velocímetro em cada cartão abre a lista das outras lanchas.
-Escolher uma abre a comparação **por cima da página**, sem navegar. Dali é
-possível trocar qualquer um dos dois lados, ver outras fotos e pedir proposta,
-tudo sem fechar.
+The speedometer icon on each card opens the list of the other boats. Picking
+one opens the comparison **on top of the page**, without navigating away. From
+there you can swap either side, browse other photos and request a quote, all
+without closing it.
 
-O **rótulo fica no meio**, entre os dois valores. Numa grade de duas colunas
-com o rótulo em cima, num monitor largo os números ficavam a mais de mil
-pixels um do outro e o olho perdia a associação, que é justamente o que a
-comparação precisa oferecer.
+The **label sits in the middle**, between the two values. In a two-column grid
+with the label on top, on a wide monitor the numbers ended up more than a
+thousand pixels apart and the eye lost the association, which is exactly what
+the comparison is there to provide.
 
-As barras dão a leitura antes do número: "7,93" e "8,83" são parecidos como
-texto, mas visivelmente diferentes como comprimento. **Não há cor de
-vencedor**: entre duas lanchas, maior não é melhor. Quem procura barco para
-marina pequena quer o menor.
+The bars give you the reading before the number: "7.93" and "8.83" look alike
+as text, but are visibly different as lengths. **There is no winner color**:
+between two boats, bigger is not better. Someone shopping for a small marina
+wants the smaller one.
 
-Cada par tem endereço próprio (`/comparar?a=…&b=…`), então a comparação pode
-ser guardada nos favoritos ou enviada a quem decide junto.
-
----
-
-## O painel
-
-Dez telas em `/admin`, atrás de sessão. O cliente cria e edita modelos e
-anúncios de seminovos, reordena a galeria, escreve o SEO de cada página,
-mantém os pontos de contato e dispara os memoriais por e-mail.
-
-Três decisões que moldaram o resto:
-
-**Contato em um lugar só.** Telefone e e-mail se repetiam em rodapé, páginas
-de contato e formulários. Agora vivem numa tabela, e alterar um ponto focal
-atualiza todas as ocorrências daquela finalidade.
-
-**Envio de memorial é manual, por clique.** O disparo automático mandaria PDF
-para qualquer um que preenchesse o formulário, concorrente incluído. O painel
-lista as solicitações e o operador decide uma a uma. Há trava contra envio
-duplicado: a reserva acontece no banco, dentro da transação, então dois
-cliques rápidos não viram dois e-mails.
-
-**Excluir exige digitar o nome.** Um modelo carrega dezenas de fotos e
-equipamentos, e um clique errado apagaria tudo.
+Each pair has its own address (`/comparar?a=…&b=…`), so a comparison can be
+bookmarked or sent to whoever is deciding alongside you.
 
 ---
 
-## Arquitetura
+## The dashboard
+
+Ten screens under `/admin`, behind a session. The client creates and edits
+models and pre-owned listings, reorders the gallery, writes the SEO for each
+page, maintains the contact points and sends out spec sheets by email.
+
+Three decisions that shaped the rest:
+
+**Contact info in one place.** Phone and email were repeated in the footer, on
+contact pages and in forms. They now live in a table, and changing one contact
+point updates every occurrence serving that purpose.
+
+**Sending a spec sheet is manual, by click.** Automatic delivery would send
+the PDF to anyone who filled the form, competitors included. The dashboard
+lists the requests and the operator decides one by one. There is a guard
+against duplicate sends: the reservation happens in the database, inside the
+transaction, so two fast clicks do not become two emails.
+
+**Deleting requires typing the name.** A model carries dozens of photos and
+equipment items, and one wrong click would wipe all of it.
+
+---
+
+## Architecture
 
 ```
 apps/frontend/          Next.js 16 (App Router) + React 19
-  src/app/(pt)/         rotas em português
-  src/app/(en)/         rotas em inglês, com root layout próprio
-  src/app/(pt)/admin/   painel, atrás de sessão
-  src/components/       44 componentes
-  src/lib/              regras puras: comparação, validação, e-mail, cripto
-  prisma/               16 tabelas, 8 migrações
-  test/                 181 testes de unidade (Vitest)
-  audit/                12 suítes ponta a ponta (Playwright)
-infra/                  Docker Compose, backup, vídeos do Drive
-docs/                   capturas e identidade
+  src/app/(pt)/         Portuguese routes
+  src/app/(en)/         English routes, with their own root layout
+  src/app/(pt)/admin/   dashboard, behind a session
+  src/components/       44 components
+  src/lib/              pure logic: comparison, validation, email, crypto
+  prisma/               16 tables, 8 migrations
+  test/                 181 unit tests (Vitest)
+  audit/                12 end-to-end suites (Playwright)
+infra/                  Docker Compose, backup, Drive videos
+docs/                   screenshots and brand identity
 ```
 
-**Dois idiomas, dois root layouts.** `(pt)` e `(en)` são route groups
-separados, cada um com seu `<html lang>`. Não é um seletor que troca strings:
-são árvores independentes, e o Google indexa as duas.
+**Two languages, two root layouts.** `(pt)` and `(en)` are separate route
+groups, each with its own `<html lang>`. It is not a switcher swapping
+strings: they are independent trees, and Google indexes both.
 
-**Postgres com driver adapter.** Prisma 7 com `PrismaPg`, conexão direta.
-Escrita concorrente na galeria usa `pg_advisory_xact_lock`. Três salvamentos
-rápidos chegaram a duplicar 57 fotos em 114 antes dessa trava existir.
+**Postgres with a driver adapter.** Prisma 7 with `PrismaPg`, direct
+connection. Concurrent writes to the gallery use `pg_advisory_xact_lock`.
+Three fast saves once duplicated 57 photos into 114 before that lock existed.
 
-**Tailwind v4 com tokens.** Cores, espaçamentos e curvas de animação são
-variáveis CSS em `@theme`, sem valor mágico espalhado por componente.
+**Tailwind v4 with tokens.** Colors, spacing and animation curves are CSS
+variables in `@theme`, with no magic values scattered across components.
 
 ---
 
-## Desempenho
+## Performance
 
-O hero de cada modelo pode ter **vídeo de fundo**, e ele foi o teste mais duro
-da arquitetura. O hero é o elemento que o Lighthouse mede como LCP, e um vídeo
-pesado ali destrói a nota.
+Each model's hero can carry a **background video**, and it was the hardest
+test of the architecture. The hero is the element Lighthouse measures as LCP,
+and a heavy video there destroys the score.
 
-A solução foi o vídeo **nunca ser o LCP**. A foto carrega com `priority` e
-pinta primeiro. O vídeo tem `preload="none"`, só começa a ser buscado depois
-do `load` da página e aparece com transição quando tem quadro para mostrar.
-Medido: **100 de desempenho com vídeo ativo, LCP de 0,6s**, contra 0,7s na
-mesma página sem vídeo.
+The fix was for the video to **never be the LCP**. The photo loads with
+`priority` and paints first. The video has `preload="none"`, only starts being
+fetched after the page's `load`, and fades in once it has a frame to show.
+Measured: **100 on performance with the video active, LCP of 0.6s**, against
+0.7s on the same page without video.
 
-O vídeo também **não é baixado** para quem pediu `prefers-reduced-motion`,
-está em economia de dados ou em rede 2G. Vídeo em laço no fundo causa
-desconforto vestibular real, e alguns megabytes de enfeite não se justificam
-numa conexão limitada.
+The video is also **not downloaded** for anyone who asked for
+`prefers-reduced-motion`, is on data saver, or is on a 2G network. A looping
+background video causes real vestibular discomfort, and a few megabytes of
+decoration do not justify themselves on a limited connection.
 
-| Métrica (desktop) | Resultado |
+| Metric (desktop) | Result |
 |---|---|
-| Acessibilidade | **100** em todas as 17 páginas |
-| Boas práticas | **100** em todas as 17 páginas |
-| SEO | **100** em todas as 17 páginas |
-| Desempenho | 88 a 100, conforme a latência do host de fotos |
+| Accessibility | **100** across all 17 pages |
+| Best practices | **100** across all 17 pages |
+| SEO | **100** across all 17 pages |
+| Performance | 88 to 100, depending on the photo host's latency |
 
-> As fotos ainda são servidas pelo WordPress anterior
-> (`lanchascoral.com.br`), que responde em 0,28s isolado e **3,74s sob
-> concorrência**. É de onde vem toda a variação de desempenho, já que medidas
-> isoladas dão 96 a 100. Hospedar as imagens junto com o site resolve, e é o
-> próximo passo.
+> The photos are still served by the old WordPress
+> (`lanchascoral.com.br`), which responds in 0.28s in isolation and **3.74s
+> under concurrency**. That is where all the performance variation comes from,
+> since isolated measurements give 96 to 100. Hosting the images alongside the
+> site fixes it, and that is the next step.
 
 ---
 
-## Qualidade
+## Quality
 
-<img src="docs/capturas/celular.webp" alt="Comparação no celular: botões alinhados e valores lado a lado" width="380">
+<img src="docs/capturas/celular.webp" alt="Comparison on a phone: buttons aligned and values side by side" width="380">
 
-**181 testes de unidade** (Vitest, cerca de 2s) cobrem o que é regra pura: a
-lógica da comparação, os validadores de campo, a criptografia dos segredos, a
-montagem do e-mail, o escape do JSON-LD e a retenção do backup.
+**181 unit tests** (Vitest, about 2s) cover what is pure logic: the comparison
+rules, the field validators, the encryption of the secrets, the email
+assembly, the JSON-LD escaping and the backup retention.
 
-**249 casos ponta a ponta** (Playwright, contra o site real) cobrem o que só
-aparece no navegador:
+**249 end-to-end cases** (Playwright, against the real site) cover what only
+shows up in the browser:
 
-| Suíte | O que verifica |
+| Suite | What it checks |
 |---|---|
-| `_teste-criacao` | criar modelo e anúncio do zero, com todos os campos |
-| `_teste-persistencia` | o que foi salvo continua salvo depois de recarregar |
-| `_teste-exclusao` | confirmação por nome digitado, e cancelar não apaga |
-| `_teste-painel` | galeria, contatos, memorial e envio |
-| `_teste-email-config` | SMTP, domínios negados, senha que não volta para o HTML |
-| `_pentest` | XSS, injeção, IDOR, vazamento de dados |
-| `_pentest3` | duplo-clique, rajada de requisições, campo sem teto |
-| `_teste-comparador` | 79 casos: fluxo, posicionamento e alinhamento |
-| `_varredura` | 20 rotas em 3 larguras de celular |
+| `_teste-criacao` | creating a model and a listing from scratch, every field |
+| `_teste-persistencia` | what was saved stays saved after a reload |
+| `_teste-exclusao` | confirmation by typed name, and that cancel does not delete |
+| `_teste-painel` | gallery, contacts, spec sheet and delivery |
+| `_teste-email-config` | SMTP, denied domains, password not coming back to the HTML |
+| `_pentest` | XSS, injection, IDOR, data leaks |
+| `_pentest3` | double-click, request bursts, fields with no cap |
+| `_teste-comparador` | 79 cases: flow, positioning and alignment |
+| `_varredura` | 20 routes at 3 phone widths |
 
-A varredura mede transbordo, rolagem lateral, alvo de toque abaixo de 44px e
-texto cortado em 390, 360 e 320px. Foi o que identificou os ícones sociais de
-36px e os botões da home saindo cortados no iPhone SE.
-
----
-
-## Segurança
-
-O painel guarda credenciais de SMTP e dados de quem pediu memorial, então
-recebeu tratamento próprio:
-
-- **Senha com bcrypt** e hash-chamariz quando o usuário não existe. O tempo de
-  resposta é o mesmo, então não é possível descobrir e-mails válidos por
-  cronometragem.
-- **Segredos com AES-256-GCM**, chave fora do banco. A senha do SMTP nunca
-  volta para o HTML depois de salva.
-- **Escrita serializada** por advisory lock, contra corrida.
-- **Tetos de tamanho** calibrados pelo conteúdo real, não por estimativa.
-- **Domínios bloqueáveis** no envio, para o memorial não chegar a concorrente.
-
-Uma vulnerabilidade real foi encontrada e corrigida no caminho. O escape do
-JSON-LD usava `.replace(/</g, '<')`, que em JavaScript **é** o caractere `<`,
-ou seja, uma operação sem efeito. Um pentest automatizado provou a execução de
-script injetado. A correção (`'\\u003c'`) foi validada reintroduzindo o
-defeito: 7 de 10 testes falharam, como deveriam.
+The sweep measures overflow, horizontal scrolling, touch targets under 44px
+and clipped text at 390, 360 and 320px. It is what caught the 36px social
+icons and the home buttons coming out clipped on an iPhone SE.
 
 ---
 
-## Referência de comandos
+## Security
 
-| Comando | O que faz |
+The dashboard holds SMTP credentials and the data of whoever requested a spec
+sheet, so it got its own treatment:
+
+- **Passwords with bcrypt** and a decoy hash when the user does not exist. The
+  response time is the same, so valid emails cannot be discovered by timing.
+- **Secrets with AES-256-GCM**, key kept outside the database. The SMTP
+  password never comes back to the HTML once saved.
+- **Serialized writes** via advisory lock, against races.
+- **Size caps** calibrated against the real content, not guessed at.
+- **Blockable domains** on delivery, so a spec sheet does not reach a
+  competitor.
+
+A real vulnerability was found and fixed along the way. The JSON-LD escaping
+used `.replace(/</g, '<')`, which in JavaScript **is** the `<` character, that
+is, a no-op. An automated pentest proved an injected script would execute. The
+fix (`'\\u003c'`) was validated by reintroducing the defect: 7 of 10 tests
+failed, as they should have.
+
+---
+
+## Command reference
+
+| Command | What it does |
 |---|---|
-| `npm run dev` | servidor de desenvolvimento |
-| `npm run build` | build de produção |
-| `npm test` | 181 testes de unidade |
-| `npm run verificar` | typecheck, lint e testes de unidade |
-| `npm run test:e2e` | bateria completa de 249 casos contra o site |
-| `node audit/lh.mjs <url>` | Lighthouse em todas as páginas |
-| `node audit/_varredura.mjs` | layout de celular, 20 rotas em 3 larguras |
-| `node infra/backup.mjs` | cópia do banco, com verificação |
-| `node infra/backup.mjs --listar` | cópias existentes |
-| `node infra/videos-do-drive.mjs` | traz e comprime vídeos do Drive |
+| `npm run dev` | development server |
+| `npm run build` | production build |
+| `npm test` | 181 unit tests |
+| `npm run verificar` | typecheck, lint and unit tests |
+| `npm run test:e2e` | the full battery of 249 cases against the site |
+| `node audit/lh.mjs <url>` | Lighthouse across every page |
+| `node audit/_varredura.mjs` | phone layout, 20 routes at 3 widths |
+| `node infra/backup.mjs` | database copy, with verification |
+| `node infra/backup.mjs --listar` | existing copies |
+| `node infra/videos-do-drive.mjs` | pulls and compresses videos from Drive |
 
 ---
 
-## Licença
+## License
 
-**© 2026 NerdResolve. Todos os direitos reservados.**
+**© 2026 NerdResolve. All rights reserved.**
 
-Repositório público para avaliação técnica e demonstração de portfólio. O
-código pode ser lido, estudado e citado com atribuição, mas não há licença de
-uso, cópia ou redistribuição. Detalhes em **[LICENSE.md](LICENSE.md)**.
+Public repository for technical evaluation and portfolio demonstration. The
+code may be read, studied and quoted with attribution, but no license to use,
+copy or redistribute is granted. Details in **[LICENSE.md](LICENSE.md)**.
 
-A identidade visual, as fotografias das embarcações, os memoriais e os textos
-institucionais pertencem à Lanchas Coral.
+The visual identity, the photographs of the boats, the spec sheets and the
+institutional copy belong to Lanchas Coral.
 
 ---
 
 <div align="center">
 
-Feito pela **[NerdResolve](https://github.com/nerdresolve)**
+Built by **[NerdResolve](https://github.com/nerdresolve)**
 
 **[contact@nerdresolve.com](mailto:contact@nerdresolve.com)**
 
